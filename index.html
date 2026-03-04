@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ГринБокс — Веб-студия по созданию интернет-магазинов</title>
+  <meta name="description"
+    content="ГринБокс — создаём современные интернет-магазины под ключ. Разработка, дизайн, интеграция платёжных систем, SEO и техническая поддержка." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <script type="module" crossorigin src="/assets/main-2H44L6Fb.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-CZB6LTBa.css">
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <span class="logo__green">Грин</span><span class="logo__box">Бокс</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#about" class="nav__link">О нас</a>
+        <a href="#services" class="nav__link">Услуги</a>
+        <a href="#portfolio" class="nav__link">Портфолио</a>
+        <a href="#team" class="nav__link">Команда</a>
+        <a href="#reviews" class="nav__link">Отзывы</a>
+        <a href="#faq" class="nav__link">FAQ</a>
+        <a href="#" class="nav__link nav__link--cta" id="openRequestModalBtn">Оставить заявку</a>
+      </nav>
+      <div class="header__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+          <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <circle cx="12" cy="12" r="5" />
+            <path
+              d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+          </svg>
+          <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+        <button class="burger" id="burger" aria-label="Открыть меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <canvas class="hero__canvas" id="heroCanvas"></canvas>
+    <div class="hero__gradient-overlay"></div>
+    <div class="container hero__content">
+      <div class="hero__badge animate-on-scroll" style="margin-bottom: 1rem;">Веб-студия ГринБокс</div>
+      <div class="hero__badge animate-on-scroll"
+        style="background: rgba(0,230,118,0.1); border-color: transparent; color: var(--text-primary); margin-left: 10px;">
+        🎁 Макет за 24 часа&nbsp;<span class="text-accent">бесплатно</span></div>
+      <h1 class="hero__title animate-on-scroll">
+        Создаём интернет-магазины<br>
+        <span class="hero__title--accent">которые продают</span>
+      </h1>
+      <p class="hero__subtitle animate-on-scroll">
+        Разрабатываем современные интернет-магазины с уникальным дизайном,
+        интеграцией платёжных систем и полной технической поддержкой
+      </p>
+      <div class="hero__actions animate-on-scroll">
+        <a href="#brief" class="btn btn--primary btn--lg">
+          <span>Заказать сайт</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+        <a href="#portfolio" class="btn btn--outline btn--lg">Наши работы</a>
+      </div>
+      <div class="hero__stats animate-on-scroll">
+        <div class="hero__stat">
+          <span class="hero__stat-num" data-count="120">0</span><span>+</span>
+          <span class="hero__stat-label">Проектов</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-num" data-count="7">0</span>
+          <span class="hero__stat-label">Лет опыта</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-num" data-count="3">0</span><span></span>
+          <span class="hero__stat-label">(сайты от 3 дней)</span>
+        </div>
+      </div>
+    </div>
+    <!-- Скролл индикатор удален по просьбе пользователя -->
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section__header animate-on-scroll">
+        <span class="section__tag">01 — О нас</span>
+        <h2 class="section__title">Мы — <span class="text-accent">ГринБокс</span></h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__text animate-on-scroll">
+          <p class="about__lead">
+            Мы — команда разработчиков и дизайнеров, специализирующихся на создании
+            высокоэффективных интернет-магазинов для российского бизнеса.
+          </p>
+          <p>
+            Наша миссия — помочь вашему бизнесу выйти в онлайн с решением, которое
+            не просто красиво выглядит, а реально приносит продажи. Мы берём на себя
+            весь процесс: от разработки дизайна до настройки платёжных систем и доставки.
+          </p>
+          <p>
+            Каждый проект для нас — это партнёрство. Мы погружаемся в ваш бизнес,
+            изучаем вашу аудиторию и создаём решение, которое работает именно для вас.
+          </p>
+        </div>
+        <div class="about__values animate-on-scroll">
+          <div class="about__value">
+            <div class="about__value-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28">
+                <path
+                  d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+            </div>
+            <div>
+              <h4>Индивидуальный подход</h4>
+              <p>Каждый проект уникален — мы не используем шаблонные решения</p>
+            </div>
+          </div>
+          <div class="about__value">
+            <div class="about__value-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28">
+                <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <div>
+              <h4>Быстрая разработка</h4>
+              <p>Запускаем ваш магазин в кратчайшие сроки без потери качества</p>
+            </div>
+          </div>
+          <div class="about__value">
+            <div class="about__value-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28">
+                <path
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <div>
+              <h4>Гарантия качества</h4>
+              <p>Полная техническая поддержка и гарантия на все наши проекты</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section__header animate-on-scroll">
+        <span class="section__tag">02 — Услуги</span>
+        <h2 class="section__title">Что мы <span class="text-accent">делаем</span></h2>
+        <p class="section__subtitle">Полный спектр услуг для вашего интернет-магазина</p>
+      </div>
+      <div class="services__grid">
+        <div class="service-card animate-on-scroll" data-delay="0">
+          <div class="service-card__number">01</div>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
+              <path
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z" />
+            </svg>
+          </div>
+          <h3 class="service-card__title">Разработка интернет-магазинов</h3>
+          <p class="service-card__desc">Создаём полнофункциональные интернет-магазины с каталогом, корзиной, личным
+            кабинетом и системой управления заказами</p>
+          <ul class="service-card__features">
+            <li>Каталог товаров</li>
+            <li>Корзина и оформление</li>
+            <li>Личный кабинет</li>
+            <li>Панель администратора</li>
+          </ul>
+        </div>
+
+        <div class="service-card animate-on-scroll" data-delay="100">
+          <div class="service-card__number">02</div>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
+              <path d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+            </svg>
+          </div>
+          <h3 class="service-card__title">Интеграция платёжных систем</h3>
+          <p class="service-card__desc">Подключаем все популярные способы оплаты: ЮKassa, Сбербанк, Тинькофф и другие
+            платёжные агрегаторы</p>
+          <ul class="service-card__features">
+            <li>ЮKassa / Сбербанк</li>
+            <li>Онлайн-касса 54-ФЗ</li>
+            <li>Рассрочка и кредит</li>
+            <li>Безопасность PCI DSS</li>
+          </ul>
+        </div>
+
+        <div class="service-card animate-on-scroll" data-delay="200">
+          <div class="service-card__number">03</div>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
+              <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              <path d="M10 8v4l2 2" />
+            </svg>
+          </div>
+          <h3 class="service-card__title">SEO-оптимизация</h3>
+          <p class="service-card__desc">Выводим ваш магазин в топ поисковых систем Яндекс и Google с грамотной
+            SEO-стратегией</p>
+          <ul class="service-card__features">
+            <li>Техническое SEO</li>
+            <li>Семантическое ядро</li>
+            <li>Оптимизация скорости</li>
+            <li>Контентная стратегия</li>
+          </ul>
+        </div>
+
+        <div class="service-card animate-on-scroll" data-delay="300">
+          <div class="service-card__number">04</div>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
+              <path
+                d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+          </div>
+          <h3 class="service-card__title">Техническая поддержка</h3>
+          <p class="service-card__desc">Обеспечиваем бесперебойную работу вашего магазина: мониторинг, обновления,
+            оперативное решение проблем</p>
+          <ul class="service-card__features">
+            <li>Мониторинг 24/7</li>
+            <li>Обновления и патчи</li>
+            <li>Резервное копирование</li>
+            <li>Приоритетная поддержка</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO ===== -->
+  <section class="section portfolio" id="portfolio">
+    <div class="container">
+      <div class="section__header animate-on-scroll">
+        <span class="section__tag">03 — Портфолио</span>
+        <h2 class="section__title">Наши <span class="text-accent">проекты</span></h2>
+        <p class="section__subtitle">Избранные работы, которыми мы гордимся</p>
+      </div>
+      <div class="portfolio__grid">
+        <div class="portfolio-card animate-on-scroll" data-delay="0">
+          <div class="portfolio-card__image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+            <div class="portfolio-card__overlay">
+              <span class="portfolio-card__category">Интернет-магазин</span>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <h3>TechStore</h3>
+            <p>Магазин электроники с каталогом 2000+ товаров</p>
+            <div class="portfolio-card__tags">
+              <span>Интернет-магазин</span><span>UX/UI</span><span>Интеграции</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card animate-on-scroll" data-delay="100">
+          <div class="portfolio-card__image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+            <div class="portfolio-card__overlay">
+              <span class="portfolio-card__category">Интернет-магазин</span>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <h3>FashionHub</h3>
+            <p>Магазин одежды с виртуальной примерочной</p>
+            <div class="portfolio-card__tags">
+              <span>Fashion</span><span>Дизайн</span><span>ЮKassa</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card animate-on-scroll" data-delay="200">
+          <div class="portfolio-card__image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+            <div class="portfolio-card__overlay">
+              <span class="portfolio-card__category">Интернет-магазин</span>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <h3>GreenMarket</h3>
+            <p>Эко-маркетплейс с доставкой по всей России</p>
+            <div class="portfolio-card__tags">
+              <span>Маркетплейс</span><span>СДЭК</span><span>SEO</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card animate-on-scroll" data-delay="300">
+          <div class="portfolio-card__image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+            <div class="portfolio-card__overlay">
+              <span class="portfolio-card__category">Лендинг</span>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <h3>AutoParts Pro</h3>
+            <p>Платформа запчастей с подбором по VIN-коду</p>
+            <div class="portfolio-card__tags">
+              <span>B2B</span><span>Каталог</span><span>API</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card portfolio-card--empty animate-on-scroll" data-delay="400"
+          onclick="window.location.href='#brief'">
+          <div class="portfolio-card__image"
+            style="background: var(--bg-card); display: flex; align-items: center; justify-content: center; border: 2px dashed var(--border-color); border-radius: var(--radius-xl) var(--radius-xl) 0 0;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--text-tertiary)" stroke-width="1.5" width="48"
+              height="48">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+            </svg>
+          </div>
+          <div class="portfolio-card__info" style="text-align: center; opacity: 0.7;">
+            <h3 style="margin-top: 1rem;">Ваш проект</h3>
+            <p>Здесь может быть ваш проект</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card portfolio-card--empty animate-on-scroll" data-delay="500"
+          onclick="window.location.href='#brief'">
+          <div class="portfolio-card__image"
+            style="background: var(--bg-card); display: flex; align-items: center; justify-content: center; border: 2px dashed var(--border-color); border-radius: var(--radius-xl) var(--radius-xl) 0 0;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--text-tertiary)" stroke-width="1.5" width="48"
+              height="48">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+            </svg>
+          </div>
+          <div class="portfolio-card__info" style="text-align: center; opacity: 0.7;">
+            <h3 style="margin-top: 1rem;">Ваш проект</h3>
+            <p>Здесь может быть ваш проект</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio__action animate-on-scroll" style="text-align: center; margin-top: var(--space-3xl);">
+        <a href="#brief" class="btn btn--primary btn--lg">
+          <span>Получить бесплатный макет</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BRIEF ===== -->
+  <section class="section brief" id="brief">
+    <div class="container">
+      <div class="section__header animate-on-scroll">
+        <span class="section__tag">04 — Бриф</span>
+        <h2 class="section__title">Расскажите о <span class="text-accent">вашем проекте</span></h2>
+        <p class="section__subtitle">Заполните бриф, и мы свяжемся с вами для обсуждения деталей</p>
+      </div>
+
+      <div class="brief__container animate-on-scroll">
+        <!-- Progress -->
+        <div class="brief__progress">
+          <div class="brief__progress-bar" id="briefProgressBar"></div>
+          <div class="brief__steps-indicator">
+            <span class="brief__step-dot active" data-step="1">1</span>
+            <span class="brief__step-dot" data-step="2">2</span>
+            <span class="brief__step-dot" data-step="3">3</span>
+            <span class="brief__step-dot" data-step="4">4</span>
+            <span class="brief__step-dot" data-step="5">5</span>
+          </div>
+        </div>
+
+        <form class="brief__form" id="briefForm" novalidate>
+
+          <!-- STEP 1: Contacts -->
+          <div class="brief__step active" data-step="1">
+            <h3 class="brief__step-title">Контактные данные</h3>
+            <div class="brief__fields">
+              <div class="form-group">
+                <label for="cdek">Номер договора CDEK / ИНН организации</label>
+                <input type="text" id="cdek" name="cdek" placeholder="Введите номер">
+              </div>
+              <div class="form-group">
+                <label for="fio">ФИО <span class="required">*</span></label>
+                <input type="text" id="fio" name="fio" placeholder="Иванов Иван Иванович" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Номер для связи <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67" required>
+              </div>
+              <div class="form-group">
+                <label for="currentSite">Текущий сайт (если есть)</label>
+                <input type="url" id="currentSite" name="currentSite" placeholder="https://example.com">
+              </div>
+              <div class="form-group form-group--full">
+                <label for="socials">Ссылки на социальные сети и площадки</label>
+                <textarea id="socials" name="socials" rows="3"
+                  placeholder="Instagram, VK, Telegram, Avito и т.д."></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 2: Business -->
+          <div class="brief__step" data-step="2">
+            <h3 class="brief__step-title">О вашем бизнесе</h3>
+            <div class="brief__fields">
+              <div class="form-group">
+                <label for="industry">Сфера деятельности / отрасль <span class="required">*</span></label>
+                <input type="text" id="industry" name="industry" placeholder="Например: одежда, электроника, продукты"
+                  required>
+              </div>
+              <div class="form-group form-group--full">
+                <label for="products">Основные продукты или услуги</label>
+                <textarea id="products" name="products" rows="3"
+                  placeholder="Опишите, что вы продаёте или какие услуги оказываете"></textarea>
+              </div>
+              <div class="form-group form-group--full">
+                <label>Что хотите получить от сайта? <span class="required">*</span></label>
+                <div class="checkbox-group">
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="goals" value="Переход из соцсетей на твердую платформу">
+                    <span class="checkmark"></span>
+                    Переход из соцсетей на твёрдую платформу
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="goals" value="Повышение узнаваемости бренда">
+                    <span class="checkmark"></span>
+                    Повышение узнаваемости бренда
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="goals" value="Повышение лояльности существующих клиентов">
+                    <span class="checkmark"></span>
+                    Повышение лояльности существующих клиентов
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="goals" value="Интеграция с агрегаторами и партнерами">
+                    <span class="checkmark"></span>
+                    Возможность интеграций с агрегаторами и компаниями партнёрами
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="goals" value="Лидогенерация и повышение заказов">
+                    <span class="checkmark"></span>
+                    Лидогенерация и повышение кол-ва заказов
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="goals" value="Автоматизация - корзина, доставка, касса">
+                    <span class="checkmark"></span>
+                    Автоматизация — полноценная корзина с заказом, доставкой и кассой
+                  </label>
+                </div>
+              </div>
+              <div class="form-group form-group--full">
+                <label for="tasks">Какие основные задачи должен решать сайт?</label>
+                <textarea id="tasks" name="tasks" rows="3"
+                  placeholder="Демонстрировать товары, принимать оплату, собирать заявки, показывать портфолио и т.д."></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 3: Solution Type -->
+          <div class="brief__step" data-step="3">
+            <h3 class="brief__step-title">Тип решения</h3>
+            <div class="brief__fields">
+              <div class="form-group form-group--full">
+                <label>Какое решение раскроет потенциал вашего бизнеса? <span class="required">*</span></label>
+                <div class="radio-cards">
+                  <label class="radio-card">
+                    <input type="radio" name="solutionType" value="Лендинг-Визитка" required>
+                    <div class="radio-card__content">
+                      <div class="radio-card__icon">🏠</div>
+                      <strong>Лендинг-Визитка</strong>
+                      <p>Быстрое информирование, сбор заявок, перевод в соцсети, без каталога и корзины</p>
+                    </div>
+                  </label>
+                  <label class="radio-card">
+                    <input type="radio" name="solutionType" value="Интернет-магазин">
+                    <div class="radio-card__content">
+                      <div class="radio-card__icon">🛒</div>
+                      <strong>Интернет-магазин</strong>
+                      <p>Полноценный каталог, корзина, онлайн-оплата, базовая автоматизация логистики</p>
+                    </div>
+                  </label>
+                  <label class="radio-card">
+                    <input type="radio" name="solutionType" value="Интернет-магазин+">
+                    <div class="radio-card__content">
+                      <div class="radio-card__icon">🚀</div>
+                      <strong>Интернет-магазин+</strong>
+                      <p>Масштабное решение с глубокой интеграцией в бизнес-процессы, ERP, B2B-функционал</p>
+                    </div>
+                  </label>
+                  <label class="radio-card">
+                    <input type="radio" name="solutionType" value="Нужна консультация">
+                    <div class="radio-card__content">
+                      <div class="radio-card__icon">💬</div>
+                      <strong>Нужна консультация</strong>
+                      <p>Хочу обсудить варианты и получить рекомендации от специалистов</p>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="solutionOther">Другое (если есть)</label>
+                <input type="text" id="solutionOther" name="solutionOther" placeholder="Опишите ваш вариант">
+              </div>
+              <div class="form-group">
+                <label for="productCount">Количество товаров в каталоге (примерно)</label>
+                <input type="text" id="productCount" name="productCount" placeholder="Например: 100, 500, 2000+">
+              </div>
+              <div class="form-group">
+                <label for="categoryCount">Количество категорий товаров (примерно)</label>
+                <input type="text" id="categoryCount" name="categoryCount" placeholder="Например: 5, 10, 20+">
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 4: Design & Content -->
+          <div class="brief__step" data-step="4">
+            <h3 class="brief__step-title">Дизайн и контент</h3>
+            <div class="brief__fields">
+              <div class="form-group form-group--full">
+                <label>Планируется ли индивидуальный дизайн? <span class="required">*</span></label>
+                <div class="radio-group">
+                  <label class="radio-label">
+                    <input type="radio" name="designType" value="Да, индивидуальный дизайн" required>
+                    <span class="radiomark"></span>
+                    Да
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="designType" value="Нет, готовые варианты">
+                    <span class="radiomark"></span>
+                    Нет, готовы рассмотреть готовые варианты
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="designType" value="Есть фирменный стиль">
+                    <span class="radiomark"></span>
+                    Есть фирменный стиль (старый сайт, соцсети, логотип или брендбук)
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="designOther">Другое</label>
+                <input type="text" id="designOther" name="designOther"
+                  placeholder="Дополнительные пожелания по дизайну">
+              </div>
+
+              <div class="form-group form-group--full">
+                <label>Выберите макет, который вам больше нравится <span class="required">*</span></label>
+                <div class="mockup-selector">
+                  <label class="mockup-card">
+                    <input type="radio" name="mockup" value="Минималистичный светлый" required>
+                    <div class="mockup-card__preview" id="mockup1">
+                      <div class="mockup-mini mockup-mini--light">
+                        <div class="mockup-mini__header">
+                          <div class="mockup-mini__logo"></div>
+                          <div class="mockup-mini__nav"><span></span><span></span><span></span></div>
+                        </div>
+                        <div class="mockup-mini__hero">
+                          <div class="mockup-mini__hero-text">
+                            <div class="mockup-mini__line mockup-mini__line--lg"></div>
+                            <div class="mockup-mini__line mockup-mini__line--md"></div>
+                            <div class="mockup-mini__btn"></div>
+                          </div>
+                          <div class="mockup-mini__hero-img"></div>
+                        </div>
+                        <div class="mockup-mini__grid">
+                          <div class="mockup-mini__card"></div>
+                          <div class="mockup-mini__card"></div>
+                          <div class="mockup-mini__card"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="mockup-card__label">Минималистичный светлый</span>
+                  </label>
+
+                  <label class="mockup-card">
+                    <input type="radio" name="mockup" value="Тёмный технологичный">
+                    <div class="mockup-card__preview" id="mockup2">
+                      <div class="mockup-mini mockup-mini--dark">
+                        <div class="mockup-mini__header">
+                          <div class="mockup-mini__logo"></div>
+                          <div class="mockup-mini__nav"><span></span><span></span><span></span></div>
+                        </div>
+                        <div class="mockup-mini__hero mockup-mini__hero--centered">
+                          <div class="mockup-mini__line mockup-mini__line--xl"></div>
+                          <div class="mockup-mini__line mockup-mini__line--md"></div>
+                          <div class="mockup-mini__btn mockup-mini__btn--glow"></div>
+                        </div>
+                        <div class="mockup-mini__grid mockup-mini__grid--2">
+                          <div class="mockup-mini__card mockup-mini__card--dark"></div>
+                          <div class="mockup-mini__card mockup-mini__card--dark"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="mockup-card__label">Тёмный технологичный</span>
+                  </label>
+
+                  <label class="mockup-card">
+                    <input type="radio" name="mockup" value="Яркий и современный">
+                    <div class="mockup-card__preview" id="mockup3">
+                      <div class="mockup-mini mockup-mini--colorful">
+                        <div class="mockup-mini__header mockup-mini__header--gradient">
+                          <div class="mockup-mini__logo"></div>
+                          <div class="mockup-mini__nav"><span></span><span></span><span></span></div>
+                        </div>
+                        <div class="mockup-mini__hero mockup-mini__hero--split">
+                          <div class="mockup-mini__hero-img mockup-mini__hero-img--round"></div>
+                          <div class="mockup-mini__hero-text">
+                            <div class="mockup-mini__line mockup-mini__line--lg mockup-mini__line--colored"></div>
+                            <div class="mockup-mini__line mockup-mini__line--sm"></div>
+                            <div class="mockup-mini__btn mockup-mini__btn--rounded"></div>
+                          </div>
+                        </div>
+                        <div class="mockup-mini__grid mockup-mini__grid--3">
+                          <div class="mockup-mini__card mockup-mini__card--round"></div>
+                          <div class="mockup-mini__card mockup-mini__card--round"></div>
+                          <div class="mockup-mini__card mockup-mini__card--round"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="mockup-card__label">Яркий и современный</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group form-group--full">
+                <label>Есть ли готовые фотографии товаров, инфографика, описания, тексты? <span
+                    class="required">*</span></label>
+                <div class="radio-group">
+                  <label class="radio-label">
+                    <input type="radio" name="hasContent" value="Да" required>
+                    <span class="radiomark"></span>
+                    Да
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="hasContent" value="Нет">
+                    <span class="radiomark"></span>
+                    Нет
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contentOther">Другое</label>
+                <input type="text" id="contentOther" name="contentOther" placeholder="Комментарий по контенту">
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 5: Logistics -->
+          <div class="brief__step" data-step="5">
+            <h3 class="brief__step-title">Оплата и доставка</h3>
+            <div class="brief__fields">
+              <div class="form-group form-group--full">
+                <label for="paymentMethods">Какие способы оплаты планируются? <span class="required">*</span></label>
+                <textarea id="paymentMethods" name="paymentMethods" rows="2"
+                  placeholder="Наличные, картой при получении, онлайн-оплата — ЮKassa, Сбербанк и др."
+                  required></textarea>
+              </div>
+              <div class="form-group form-group--full">
+                <label for="deliveryMethods">Какие способы доставки планируются? <span class="required">*</span></label>
+                <textarea id="deliveryMethods" name="deliveryMethods" rows="2"
+                  placeholder="Самовывоз, курьер, СДЭК, Почта России и др." required></textarea>
+              </div>
+              <div class="form-group form-group--full">
+                <label>Планируете ли использовать промокоды, скидки, акции? <span class="required">*</span></label>
+                <div class="radio-group">
+                  <label class="radio-label">
+                    <input type="radio" name="promos" value="Да" required>
+                    <span class="radiomark"></span>
+                    Да
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="promos" value="Нет">
+                    <span class="radiomark"></span>
+                    Нет
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="promosOther">Другое</label>
+                <input type="text" id="promosOther" name="promosOther" placeholder="Дополнительная информация">
+              </div>
+              <div class="form-group form-group--full">
+                <label class="checkbox-label" style="align-items: flex-start;">
+                  <input type="checkbox" name="personalDataConsent" required>
+                  <span class="checkmark" style="margin-top: 3px;"></span>
+                  <span style="font-size: 0.9rem; opacity: 0.8;">Я согласен на обработку персональных данных в
+                    соответствии с <a href="#" style="text-decoration: underline;">политикой
+                      конфиденциальности</a></span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation -->
+          <div class="brief__nav">
+            <button type="button" class="btn btn--outline brief__btn-prev" id="briefPrev" style="display:none;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+              </svg>
+              Назад
+            </button>
+            <button type="button" class="btn btn--primary brief__btn-next" id="briefNext">
+              Далее
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </button>
+            <button type="submit" class="btn btn--primary brief__btn-submit" id="briefSubmit" style="display:none;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+              </svg>
+              Отправить бриф
+            </button>
+          </div>
+        </form>
+
+        <!-- Success -->
+        <div class="brief__success" id="briefSuccess" style="display:none;">
+          <div class="brief__success-icon">✓</div>
+          <h3>Бриф успешно отправлен!</h3>
+          <p>Мы свяжемся с вами в ближайшее время для обсуждения деталей проекта.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEAM ===== -->
+  <section class="section team" id="team">
+    <div class="container">
+      <div class="section__header animate-on-scroll">
+        <span class="section__tag">05 — Команда</span>
+        <h2 class="section__title">Люди за <span class="text-accent">ГринБокс</span></h2>
+        <p class="section__subtitle">Профессионалы, которые создают ваши проекты</p>
+      </div>
+      <div class="team__grid">
+        <div class="team-card animate-on-scroll">
+          <div class="team-card__photo">
+            <img src="/wld.jpg" alt="Дробышев И.С. — Основатель GreenBox" loading="lazy" />
+            <div class="team-card__glow"></div>
+          </div>
+          <div class="team-card__info">
+            <h3 class="team-card__name">Дробышев И.С.</h3>
+            <span class="team-card__role">Основатель компании</span>
+            <p class="team-card__desc">Визионер и стратег, определяющий направление развития компании.</p>
+          </div>
+        </div>
+
+        <div class="team-card animate-on-scroll">
+          <div class="team-card__photo">
+            <img src="/fomin.png" alt="Фомин Е.В. — Член команды ГринБокс" loading="lazy" />
+            <div class="team-card__glow"></div>
+          </div>
+          <div class="team-card__info">
+            <h3 class="team-card__name">Фомин Е.В.</h3>
+            <span class="team-card__role">Коммерческий руководитель</span>
+            <p class="team-card__desc">Отвечает за коммерческий блок и коммуникацию с партнерами</p>
+          </div>
+        </div>
+
+        <div class="team-card animate-on-scroll">
+          <div class="team-card__photo">
+            <img src="/web.jpg" alt="Нестеров А.С. — Старший веб-разработчик GreenBox" loading="lazy" />
+            <div class="team-card__glow"></div>
+          </div>
+          <div class="team-card__info">
+            <h3 class="team-card__name">Нестеров А.С.</h3>
+            <span class="team-card__role">Старший веб-разработчик</span>
+            <p class="team-card__desc">Технический лидер команды. Отвечает за архитектуру и техническую реализацию
+              проектов.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <section class="section reviews" id="reviews">
+    <div class="container">
+      <div class="section__header animate-on-scroll">
+        <span class="section__tag">06 — Отзывы</span>
+        <h2 class="section__title">Что говорят <span class="text-accent">клиенты</span></h2>
+      </div>
+      <div class="reviews__slider" id="reviewsSlider">
+        <div class="reviews__track" id="reviewsTrack">
+          <div class="review-card">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">«ГринБокс создали для нас потрясающий интернет-магазин. Продажи выросли на 150%
+              после запуска. Рекомендую!»</p>
+            <div class="review-card__author">
+              <div class="review-card__avatar">АК</div>
+              <div>
+                <strong>Алексей Козлов</strong>
+                <span>TechStore, CEO</span>
+              </div>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">«Профессиональный подход на каждом этапе. Ребята реально погружаются в бизнес и
+              предлагают решения, о которых мы сами не думали.»</p>
+            <div class="review-card__author">
+              <div class="review-card__avatar">МС</div>
+              <div>
+                <strong>Мария Смирнова</strong>
+                <span>FashionHub, Основатель</span>
+              </div>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">«Отличная техническая поддержка! Любые вопросы решаются оперативно. Сайт
+              работает стабильно уже больше года.»</p>
+            <div class="review-card__author">
+              <div class="review-card__avatar">ДВ</div>
+              <div>
+                <strong>Дмитрий Волков</strong>
+                <span>GreenMarket, CTO</span>
+              </div>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">«Запустили магазин за 3 недели — быстрее, чем обещали. Интеграция с СДЭК и
+              ЮKassa заработала сразу. Очень довольны!»</p>
+            <div class="review-card__author">
+              <div class="review-card__avatar">ИП</div>
+              <div>
+                <strong>Ирина Петрова</strong>
+                <span>AutoParts Pro, Директор</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__controls">
+          <button class="reviews__btn reviews__btn--prev" id="reviewsPrev" aria-label="Предыдущий отзыв">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+              <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <div class="reviews__dots" id="reviewsDots"></div>
+          <button class="reviews__btn reviews__btn--next" id="reviewsNext" aria-label="Следующий отзыв">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section faq" id="faq">
+    <div class="container">
+      <div class="section__header animate-on-scroll">
+        <span class="section__tag">07 — FAQ</span>
+        <h2 class="section__title">Часто задаваемые <span class="text-accent">вопросы</span></h2>
+      </div>
+      <div class="faq__list">
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-item__question">
+            <span>Сколько стоит разработка интернет-магазина?</span>
+            <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              width="20" height="20">
+              <path d="M12 5v14M5 12h14" />
+            </svg>
+          </button>
+          <div class="faq-item__answer">
+            <p>Стоимость зависит от сложности проекта, количества товаров и необходимых интеграций. Мы предлагаем
+              решения от лендингов-визиток до масштабных B2B-платформ. Заполните бриф, и мы подготовим индивидуальное
+              предложение.</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-item__question">
+            <span>Сколько времени занимает разработка?</span>
+            <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              width="20" height="20">
+              <path d="M12 5v14M5 12h14" />
+            </svg>
+          </button>
+          <div class="faq-item__answer">
+            <p>Лендинг-визитку можно запустить за 1-2 недели. Полноценный интернет-магазин — от 3 до 8 недель в
+              зависимости от объёма функционала и количества интеграций.</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-item__question">
+            <span>Какие платёжные системы вы подключаете?</span>
+            <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              width="20" height="20">
+              <path d="M12 5v14M5 12h14" />
+            </svg>
+          </button>
+          <div class="faq-item__answer">
+            <p>Мы работаем с ЮKassa, Сбербанк, Тинькофф, CloudPayments и другими агрегаторами. Подключаем онлайн-кассу
+              по 54-ФЗ, настраиваем рассрочку и кредитование.</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-item__question">
+            <span>Предоставляете ли вы поддержку после запуска?</span>
+            <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              width="20" height="20">
+              <path d="M12 5v14M5 12h14" />
+            </svg>
+          </button>
+          <div class="faq-item__answer">
+            <p>Да! Мы предоставляем техническую поддержку и гарантию на все проекты. Мониторинг работоспособности,
+              обновления, резервное копирование и оперативное решение любых проблем.</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-item__question">
+            <span>Можно ли доработать существующий сайт?</span>
+            <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              width="20" height="20">
+              <path d="M12 5v14M5 12h14" />
+            </svg>
+          </button>
+          <div class="faq-item__answer">
+            <p>Конечно! Мы берёмся за доработку и модернизацию существующих проектов. Проведём аудит, предложим
+              оптимальные решения и реализуем улучшения.</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-item__question">
+            <span>Какие гарантии вы даёте?</span>
+            <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              width="20" height="20">
+              <path d="M12 5v14M5 12h14" />
+            </svg>
+          </button>
+          <div class="faq-item__answer">
+            <p>Мы работаем по договору, фиксируем все этапы и сроки. Предоставляем гарантийный период после запуска, в
+              течение которого бесплатно устраняем все обнаруженные ошибки.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTS ===== -->
+  <section class="section contacts" id="contacts">
+    <div class="container">
+      <div class="section__header animate-on-scroll">
+        <span class="section__tag">08 — Контакты</span>
+        <h2 class="section__title">Свяжитесь <span class="text-accent">с нами</span></h2>
+      </div>
+      <div class="contacts__grid">
+        <div class="contact-card animate-on-scroll">
+          <div class="contact-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28">
+              <path
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h4>Email</h4>
+          <a href="mailto:info.greenboxweb@gmail.com">info.greenboxweb@gmail.com</a>
+        </div>
+        <div class="contact-card animate-on-scroll">
+          <div class="contact-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28">
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+            </svg>
+          </div>
+          <h4>Telegram</h4>
+          <a href="https://t.me/infogreenbox" target="_blank">@infogreenbox</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="logo">
+          <span class="logo__green">Green</span><span class="logo__box">Box</span>
+        </a>
+        <p>Создаём интернет-магазины, которые продают</p>
+        <div class="footer__legal" style="margin-top: 1rem; font-size: 0.8rem; opacity: 0.7; line-height: 1.6;">
+          ИП Дробышев И.С.<br>
+          ИНН 860238618587<br>
+          ОГРНИП 324237500356338
+        </div>
+      </div>
+      <div class="footer__links">
+        <a href="#about">О нас</a>
+        <a href="#services">Услуги</a>
+        <a href="#portfolio">Портфолио</a>
+        <a href="#" id="openRequestModalBtnFooter">Оставить заявку</a>
+        <a href="/legal.html">Реквизиты и контакты</a>
+      </div>
+      <div class="footer__bottom">
+        <p>Россия &copy; 2026 ГринБокс. Все права защищены.</p>
+        <p style="margin-top: 5px;"><a href="/legal.html"
+            style="color: var(--text-tertiary); text-decoration: underline; font-size: 0.8rem;">Политика
+            конфиденциальности и обработки персональных данных</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== REQUEST MODAL ===== -->
+  <div class="modal" id="requestModal">
+    <div class="modal__overlay" id="requestModalOverlay"></div>
+    <div class="modal__content">
+      <button class="modal__close" id="requestModalClose" aria-label="Закрыть">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6L6 18M6 6l12 12" />
+        </svg>
+      </button>
+      <h3 class="modal__title">Оставить заявку</h3>
+      <p class="modal__desc">Заполните форму, и мы свяжемся с вами в течение 15 минут.</p>
+
+      <form class="modal__form" id="requestForm" novalidate>
+        <div class="form-group form-group--full">
+          <label for="reqName">Имя <span class="required">*</span></label>
+          <input type="text" id="reqName" name="reqName" placeholder="Ваше имя" required>
+        </div>
+        <div class="form-group form-group--full">
+          <label for="reqPhone">Номер телефона <span class="required">*</span></label>
+          <input type="tel" id="reqPhone" name="reqPhone" placeholder="+7 (999) 123-45-67" required>
+        </div>
+        <div class="form-group form-group--full">
+          <label for="reqActivity">Вид деятельности <span class="required">*</span></label>
+          <input type="text" id="reqActivity" name="reqActivity" placeholder="Например: магазин одежды" required>
+        </div>
+        <div class="form-group form-group--full">
+          <label class="checkbox-label" style="align-items: flex-start;">
+            <input type="checkbox" name="reqConsent" required>
+            <span class="checkmark" style="margin-top: 3px;"></span>
+            <span style="font-size: 0.85rem; opacity: 0.8;">Я согласен на обработку персональных данных</span>
+          </label>
+        </div>
+        <button type="submit" class="btn btn--primary" style="width: 100%; margin-top: 1rem;">
+          Отправить заявку
+        </button>
+      </form>
+
+      <div class="modal__success" id="requestSuccess" style="display:none; text-align: center; padding: 2rem 0;">
+        <div style="font-size: 3rem; color: var(--color-primary); margin-bottom: 1rem;">✓</div>
+        <h3>Заявка отправлена!</h3>
+        <p>Мы скоро свяжемся с вами.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

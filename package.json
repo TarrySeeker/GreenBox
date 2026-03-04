@@ -1,0 +1,32 @@
+{
+  "name": "greenbox-website",
+  "version": "1.0.0",
+  "description": "Сайт веб-студии ГринБокс по созданию интернет-магазинов",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && echo 'Build completed. Upload dist/ to your web server.'"
+  },
+  "keywords": [
+    "веб-студия",
+    "интернет-магазины", 
+    "ecommerce",
+    "разработка сайтов",
+    "greenbox"
+  ],
+  "author": "ГринБокс Team",
+  "license": "MIT",
+  "homepage": "https://greenboxweb.ru/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TarrySeeker/GreenBox.git"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
