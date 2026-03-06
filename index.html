@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ГринБокс — Веб-студия по созданию интернет-магазинов</title>
+  <title>ЗелёнаяКоробка — Веб-студия по созданию интернет-магазинов</title>
   <meta name="description"
-    content="ГринБокс — создаём современные интернет-магазины под ключ. Разработка, дизайн, интеграция платёжных систем, SEO и техническая поддержка." />
+    content="ЗелёнаяКоробка — создаём современные интернет-магазины под ключ. Разработка, дизайн, интеграция платёжных систем, продвижение и техническая поддержка." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -22,7 +22,7 @@
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="#" class="logo">
-        <span class="logo__green">Грин</span><span class="logo__box">Бокс</span>
+        <span class="logo__green">Зелёная</span><span class="logo__box">Коробка</span>
       </a>
       <nav class="nav" id="nav">
         <a href="#about" class="nav__link">О нас</a>
@@ -30,7 +30,7 @@
         <a href="#portfolio" class="nav__link">Портфолио</a>
         <a href="#team" class="nav__link">Команда</a>
         <a href="#reviews" class="nav__link">Отзывы</a>
-        <a href="#faq" class="nav__link">FAQ</a>
+        <a href="#faq" class="nav__link">Вопросы</a>
         <a href="#" class="nav__link nav__link--cta" id="openRequestModalBtn">Оставить заявку</a>
       </nav>
       <div class="header__actions">
@@ -58,7 +58,7 @@
     <canvas class="hero__canvas" id="heroCanvas"></canvas>
     <div class="hero__gradient-overlay"></div>
     <div class="container hero__content">
-      <div class="hero__badge animate-on-scroll" style="margin-bottom: 1rem;">Веб-студия ГринБокс</div>
+      <div class="hero__badge animate-on-scroll" style="margin-bottom: 1rem;">Веб-студия ЗелёнаяКоробка</div>
       <div class="hero__badge animate-on-scroll"
         style="background: rgba(0,230,118,0.1); border-color: transparent; color: var(--text-primary); margin-left: 10px;">
         🎁 Макет за 24 часа&nbsp;<span class="text-accent">бесплатно</span></div>
@@ -89,8 +89,8 @@
           <span class="hero__stat-label">Лет опыта</span>
         </div>
         <div class="hero__stat">
-          <span class="hero__stat-num" data-count="3">0</span><span></span>
-          <span class="hero__stat-label">(сайты от 3 дней)</span>
+          <span>от </span><span class="hero__stat-num" data-count="3">0</span><span></span>
+          <span class="hero__stat-label">дней на разработку</span>
         </div>
       </div>
     </div>
@@ -102,7 +102,7 @@
     <div class="container">
       <div class="section__header animate-on-scroll">
         <span class="section__tag">01 — О нас</span>
-        <h2 class="section__title">Мы — <span class="text-accent">ГринБокс</span></h2>
+        <h2 class="section__title">Мы — <span class="text-accent">ЗелёнаяКоробка</span></h2>
       </div>
       <div class="about__grid">
         <div class="about__text animate-on-scroll">
@@ -257,82 +257,77 @@
         <p class="section__subtitle">Избранные работы, которыми мы гордимся</p>
       </div>
       <div class="portfolio__grid">
+        <!-- Проект 1: 24 Сварка -->
         <div class="portfolio-card animate-on-scroll" data-delay="0">
-          <div class="portfolio-card__image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-            <div class="portfolio-card__overlay">
-              <span class="portfolio-card__category">Интернет-магазин</span>
+          <a href="https://24svarkaekb.ru/" target="_blank" style="text-decoration: none; color: inherit;">
+            <div class="portfolio-card__image" style="overflow: hidden; position: relative;">
+              <picture>
+                <source media="(max-width: 768px)" srcset="/SvarkaMobil.png">
+                <img src="/Svarka1920.png" alt="24 Сварка Екатеринбург — Интернет-магазин сварочного оборудования"
+                  loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+              </picture>
+              <div class="portfolio-card__overlay">
+                <span class="portfolio-card__category">Интернет-магазин</span>
+              </div>
             </div>
-          </div>
-          <div class="portfolio-card__info">
-            <h3>TechStore</h3>
-            <p>Магазин электроники с каталогом 2000+ товаров</p>
-            <div class="portfolio-card__tags">
-              <span>Интернет-магазин</span><span>UX/UI</span><span>Интеграции</span>
+            <div class="portfolio-card__info">
+              <h3>24 Сварка</h3>
+              <p>Интернет-магазин сварочного оборудования с каталогом и калькулятором</p>
+              <div class="portfolio-card__tags">
+                <span>Интернет-магазин</span><span>Каталог</span><span>Калькулятор</span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
 
+        <!-- Проект 2: Мебель -->
         <div class="portfolio-card animate-on-scroll" data-delay="100">
-          <div class="portfolio-card__image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-            <div class="portfolio-card__overlay">
-              <span class="portfolio-card__category">Интернет-магазин</span>
+          <a href="https://erfgq.website/" target="_blank" style="text-decoration: none; color: inherit;">
+            <div class="portfolio-card__image" style="overflow: hidden; position: relative;">
+              <picture>
+                <source media="(max-width: 768px)" srcset="/MebelMobil.png">
+                <img src="/Mebel1920.png" alt="Интернет-магазин мебели" loading="lazy"
+                  style="width: 100%; height: 100%; object-fit: cover;">
+              </picture>
+              <div class="portfolio-card__overlay">
+                <span class="portfolio-card__category">Интернет-магазин</span>
+              </div>
             </div>
-          </div>
-          <div class="portfolio-card__info">
-            <h3>FashionHub</h3>
-            <p>Магазин одежды с виртуальной примерочной</p>
-            <div class="portfolio-card__tags">
-              <span>Fashion</span><span>Дизайн</span><span>ЮKassa</span>
+            <div class="portfolio-card__info">
+              <h3>МебельКомфорт</h3>
+              <p>Интернет-магазин мебели с каталогом и доставкой</p>
+              <div class="portfolio-card__tags">
+                <span>Интернет-магазин</span><span>Каталог</span><span>Дизайн</span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
 
+        <!-- Проект 3: Инструменты -->
         <div class="portfolio-card animate-on-scroll" data-delay="200">
-          <div class="portfolio-card__image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-            <div class="portfolio-card__overlay">
-              <span class="portfolio-card__category">Интернет-магазин</span>
+          <a href="https://uwerfvbhni.website/" target="_blank" style="text-decoration: none; color: inherit;">
+            <div class="portfolio-card__image" style="overflow: hidden; position: relative;">
+              <picture>
+                <source media="(max-width: 768px)" srcset="/InstrMobil.png">
+                <img src="/Instr1920.png" alt="Интернет-магазин инструментов" loading="lazy"
+                  style="width: 100%; height: 100%; object-fit: cover;">
+              </picture>
+              <div class="portfolio-card__overlay">
+                <span class="portfolio-card__category">Интернет-магазин</span>
+              </div>
             </div>
-          </div>
-          <div class="portfolio-card__info">
-            <h3>GreenMarket</h3>
-            <p>Эко-маркетплейс с доставкой по всей России</p>
-            <div class="portfolio-card__tags">
-              <span>Маркетплейс</span><span>СДЭК</span><span>SEO</span>
+            <div class="portfolio-card__info">
+              <h3>ИнструментПро</h3>
+              <p>Интернет-магазин инструментов с каталогом и подбором</p>
+              <div class="portfolio-card__tags">
+                <span>Интернет-магазин</span><span>Каталог</span><span>Интеграции</span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
 
-        <div class="portfolio-card animate-on-scroll" data-delay="300">
-          <div class="portfolio-card__image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
-            <div class="portfolio-card__overlay">
-              <span class="portfolio-card__category">Лендинг</span>
-            </div>
-          </div>
-          <div class="portfolio-card__info">
-            <h3>AutoParts Pro</h3>
-            <p>Платформа запчастей с подбором по VIN-коду</p>
-            <div class="portfolio-card__tags">
-              <span>B2B</span><span>Каталог</span><span>API</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio-card portfolio-card--empty animate-on-scroll" data-delay="400"
-          onclick="window.location.href='#brief'">
-          <div class="portfolio-card__image"
-            style="background: var(--bg-card); display: flex; align-items: center; justify-content: center; border: 2px dashed var(--border-color); border-radius: var(--radius-xl) var(--radius-xl) 0 0;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="var(--text-tertiary)" stroke-width="1.5" width="48"
-              height="48">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
-            </svg>
-          </div>
-          <div class="portfolio-card__info" style="text-align: center; opacity: 0.7;">
-            <h3 style="margin-top: 1rem;">Ваш проект</h3>
-            <p>Здесь может быть ваш проект</p>
-          </div>
-        </div>
-
-        <div class="portfolio-card portfolio-card--empty animate-on-scroll" data-delay="500"
+        <!-- Ваш проект -->
+        <div class="portfolio-card portfolio-card--empty animate-on-scroll" data-delay="300"
           onclick="window.location.href='#brief'">
           <div class="portfolio-card__image"
             style="background: var(--bg-card); display: flex; align-items: center; justify-content: center; border: 2px dashed var(--border-color); border-radius: var(--radius-xl) var(--radius-xl) 0 0;">
@@ -347,12 +342,13 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="portfolio__action animate-on-scroll" style="text-align: center; margin-top: var(--space-3xl);">
-        <a href="#brief" class="btn btn--primary btn--lg">
-          <span>Получить бесплатный макет</span>
-        </a>
-      </div>
+    <div class="portfolio__action animate-on-scroll" style="text-align: center; margin-top: var(--space-3xl);">
+      <a href="#brief" class="btn btn--primary btn--lg">
+        <span>Получить бесплатный макет</span>
+      </a>
+    </div>
     </div>
   </section>
 
@@ -375,317 +371,324 @@
             <span class="brief__step-dot" data-step="3">3</span>
             <span class="brief__step-dot" data-step="4">4</span>
             <span class="brief__step-dot" data-step="5">5</span>
+            <span class="brief__step-dot" data-step="6">6</span>
           </div>
         </div>
 
         <form class="brief__form" id="briefForm" novalidate>
 
-          <!-- STEP 1: Contacts -->
+          <!-- STEP 1: Vibe -->
           <div class="brief__step active" data-step="1">
-            <h3 class="brief__step-title">Контактные данные</h3>
-            <div class="brief__fields">
-              <div class="form-group">
-                <label for="cdek">Номер договора CDEK / ИНН организации</label>
-                <input type="text" id="cdek" name="cdek" placeholder="Введите номер">
-              </div>
-              <div class="form-group">
-                <label for="fio">ФИО <span class="required">*</span></label>
-                <input type="text" id="fio" name="fio" placeholder="Иванов Иван Иванович" required>
-              </div>
-              <div class="form-group">
-                <label for="phone">Номер для связи <span class="required">*</span></label>
-                <input type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67" required>
-              </div>
-              <div class="form-group">
-                <label for="currentSite">Текущий сайт (если есть)</label>
-                <input type="url" id="currentSite" name="currentSite" placeholder="https://example.com">
-              </div>
-              <div class="form-group form-group--full">
-                <label for="socials">Ссылки на социальные сети и площадки</label>
-                <textarea id="socials" name="socials" rows="3"
-                  placeholder="Instagram, VK, Telegram, Avito и т.д."></textarea>
-              </div>
-            </div>
-          </div>
-
-          <!-- STEP 2: Business -->
-          <div class="brief__step" data-step="2">
-            <h3 class="brief__step-title">О вашем бизнесе</h3>
-            <div class="brief__fields">
-              <div class="form-group">
-                <label for="industry">Сфера деятельности / отрасль <span class="required">*</span></label>
-                <input type="text" id="industry" name="industry" placeholder="Например: одежда, электроника, продукты"
-                  required>
-              </div>
-              <div class="form-group form-group--full">
-                <label for="products">Основные продукты или услуги</label>
-                <textarea id="products" name="products" rows="3"
-                  placeholder="Опишите, что вы продаёте или какие услуги оказываете"></textarea>
-              </div>
-              <div class="form-group form-group--full">
-                <label>Что хотите получить от сайта? <span class="required">*</span></label>
-                <div class="checkbox-group">
-                  <label class="checkbox-label">
-                    <input type="checkbox" name="goals" value="Переход из соцсетей на твердую платформу">
-                    <span class="checkmark"></span>
-                    Переход из соцсетей на твёрдую платформу
-                  </label>
-                  <label class="checkbox-label">
-                    <input type="checkbox" name="goals" value="Повышение узнаваемости бренда">
-                    <span class="checkmark"></span>
-                    Повышение узнаваемости бренда
-                  </label>
-                  <label class="checkbox-label">
-                    <input type="checkbox" name="goals" value="Повышение лояльности существующих клиентов">
-                    <span class="checkmark"></span>
-                    Повышение лояльности существующих клиентов
-                  </label>
-                  <label class="checkbox-label">
-                    <input type="checkbox" name="goals" value="Интеграция с агрегаторами и партнерами">
-                    <span class="checkmark"></span>
-                    Возможность интеграций с агрегаторами и компаниями партнёрами
-                  </label>
-                  <label class="checkbox-label">
-                    <input type="checkbox" name="goals" value="Лидогенерация и повышение заказов">
-                    <span class="checkmark"></span>
-                    Лидогенерация и повышение кол-ва заказов
-                  </label>
-                  <label class="checkbox-label">
-                    <input type="checkbox" name="goals" value="Автоматизация - корзина, доставка, касса">
-                    <span class="checkmark"></span>
-                    Автоматизация — полноценная корзина с заказом, доставкой и кассой
-                  </label>
-                </div>
-              </div>
-              <div class="form-group form-group--full">
-                <label for="tasks">Какие основные задачи должен решать сайт?</label>
-                <textarea id="tasks" name="tasks" rows="3"
-                  placeholder="Демонстрировать товары, принимать оплату, собирать заявки, показывать портфолио и т.д."></textarea>
-              </div>
-            </div>
-          </div>
-
-          <!-- STEP 3: Solution Type -->
-          <div class="brief__step" data-step="3">
-            <h3 class="brief__step-title">Тип решения</h3>
+            <h3 class="brief__step-title">Визуальный Вайб (Атмосфера)</h3>
+            <p style="margin-bottom: 24px; opacity: 0.8;">В какой стилистике мы упакуем ваш бренд?</p>
             <div class="brief__fields">
               <div class="form-group form-group--full">
-                <label>Какое решение раскроет потенциал вашего бизнеса? <span class="required">*</span></label>
-                <div class="radio-cards">
-                  <label class="radio-card">
-                    <input type="radio" name="solutionType" value="Лендинг-Визитка" required>
-                    <div class="radio-card__content">
-                      <div class="radio-card__icon">🏠</div>
-                      <strong>Лендинг-Визитка</strong>
-                      <p>Быстрое информирование, сбор заявок, перевод в соцсети, без каталога и корзины</p>
-                    </div>
-                  </label>
-                  <label class="radio-card">
-                    <input type="radio" name="solutionType" value="Интернет-магазин">
-                    <div class="radio-card__content">
-                      <div class="radio-card__icon">🛒</div>
-                      <strong>Интернет-магазин</strong>
-                      <p>Полноценный каталог, корзина, онлайн-оплата, базовая автоматизация логистики</p>
-                    </div>
-                  </label>
-                  <label class="radio-card">
-                    <input type="radio" name="solutionType" value="Интернет-магазин+">
-                    <div class="radio-card__content">
-                      <div class="radio-card__icon">🚀</div>
-                      <strong>Интернет-магазин+</strong>
-                      <p>Масштабное решение с глубокой интеграцией в бизнес-процессы, ERP, B2B-функционал</p>
-                    </div>
-                  </label>
-                  <label class="radio-card">
-                    <input type="radio" name="solutionType" value="Нужна консультация">
-                    <div class="radio-card__content">
-                      <div class="radio-card__icon">💬</div>
-                      <strong>Нужна консультация</strong>
-                      <p>Хочу обсудить варианты и получить рекомендации от специалистов</p>
-                    </div>
-                  </label>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="solutionOther">Другое (если есть)</label>
-                <input type="text" id="solutionOther" name="solutionOther" placeholder="Опишите ваш вариант">
-              </div>
-              <div class="form-group">
-                <label for="productCount">Количество товаров в каталоге (примерно)</label>
-                <input type="text" id="productCount" name="productCount" placeholder="Например: 100, 500, 2000+">
-              </div>
-              <div class="form-group">
-                <label for="categoryCount">Количество категорий товаров (примерно)</label>
-                <input type="text" id="categoryCount" name="categoryCount" placeholder="Например: 5, 10, 20+">
-              </div>
-            </div>
-          </div>
-
-          <!-- STEP 4: Design & Content -->
-          <div class="brief__step" data-step="4">
-            <h3 class="brief__step-title">Дизайн и контент</h3>
-            <div class="brief__fields">
-              <div class="form-group form-group--full">
-                <label>Планируется ли индивидуальный дизайн? <span class="required">*</span></label>
-                <div class="radio-group">
-                  <label class="radio-label">
-                    <input type="radio" name="designType" value="Да, индивидуальный дизайн" required>
-                    <span class="radiomark"></span>
-                    Да
-                  </label>
-                  <label class="radio-label">
-                    <input type="radio" name="designType" value="Нет, готовые варианты">
-                    <span class="radiomark"></span>
-                    Нет, готовы рассмотреть готовые варианты
-                  </label>
-                  <label class="radio-label">
-                    <input type="radio" name="designType" value="Есть фирменный стиль">
-                    <span class="radiomark"></span>
-                    Есть фирменный стиль (старый сайт, соцсети, логотип или брендбук)
-                  </label>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="designOther">Другое</label>
-                <input type="text" id="designOther" name="designOther"
-                  placeholder="Дополнительные пожелания по дизайну">
-              </div>
-
-              <div class="form-group form-group--full">
-                <label>Выберите макет, который вам больше нравится <span class="required">*</span></label>
+                <!-- Using mockup-selector from existing CSS for visual mini-mockups -->
                 <div class="mockup-selector">
+                  <!-- Option 1: Строгий минимализм (Light) -->
                   <label class="mockup-card">
-                    <input type="radio" name="mockup" value="Минималистичный светлый" required>
-                    <div class="mockup-card__preview" id="mockup1">
+                    <input type="radio" name="vibe" value="Строгий минимализм" required>
+                    <div class="mockup-card__preview">
                       <div class="mockup-mini mockup-mini--light">
                         <div class="mockup-mini__header">
-                          <div class="mockup-mini__logo"></div>
-                          <div class="mockup-mini__nav"><span></span><span></span><span></span></div>
+                          <div class="mockup-mini__logo" style="background:var(--text-primary)"></div>
+                          <div class="mockup-mini__nav">
+                            <span></span><span></span><span></span>
+                          </div>
                         </div>
                         <div class="mockup-mini__hero">
                           <div class="mockup-mini__hero-text">
                             <div class="mockup-mini__line mockup-mini__line--lg"></div>
-                            <div class="mockup-mini__line mockup-mini__line--md"></div>
-                            <div class="mockup-mini__btn"></div>
+                            <div class="mockup-mini__line mockup-mini__line--sm"></div>
+                            <div class="mockup-mini__btn" style="background:var(--text-primary)"></div>
                           </div>
-                          <div class="mockup-mini__hero-img"></div>
+                          <div class="mockup-mini__hero-img" style="background:#e0e0e0"></div>
                         </div>
-                        <div class="mockup-mini__grid">
-                          <div class="mockup-mini__card"></div>
-                          <div class="mockup-mini__card"></div>
-                          <div class="mockup-mini__card"></div>
+                        <div class="mockup-mini__grid mockup-mini__grid--2">
+                          <div class="mockup-mini__card" style="background:#f0f0f0"></div>
+                          <div class="mockup-mini__card" style="background:#f0f0f0"></div>
                         </div>
                       </div>
                     </div>
-                    <span class="mockup-card__label">Минималистичный светлый</span>
+                    <span class="mockup-card__label">Строгий минимализм</span>
                   </label>
 
+                  <!-- Option 2: Dark Premium -->
                   <label class="mockup-card">
-                    <input type="radio" name="mockup" value="Тёмный технологичный">
-                    <div class="mockup-card__preview" id="mockup2">
+                    <input type="radio" name="vibe" value="Dark Premium">
+                    <div class="mockup-card__preview">
                       <div class="mockup-mini mockup-mini--dark">
                         <div class="mockup-mini__header">
-                          <div class="mockup-mini__logo"></div>
-                          <div class="mockup-mini__nav"><span></span><span></span><span></span></div>
+                          <div class="mockup-mini__logo" style="background:#fff"></div>
+                          <div class="mockup-mini__nav">
+                            <span></span><span></span><span></span>
+                          </div>
                         </div>
                         <div class="mockup-mini__hero mockup-mini__hero--centered">
-                          <div class="mockup-mini__line mockup-mini__line--xl"></div>
+                          <div class="mockup-mini__hero-img mockup-mini__hero-img--round"
+                            style="background:linear-gradient(135deg, #333, #1a1a2e)"></div>
                           <div class="mockup-mini__line mockup-mini__line--md"></div>
                           <div class="mockup-mini__btn mockup-mini__btn--glow"></div>
                         </div>
-                        <div class="mockup-mini__grid mockup-mini__grid--2">
+                        <div class="mockup-mini__grid">
+                          <div class="mockup-mini__card mockup-mini__card--dark"></div>
                           <div class="mockup-mini__card mockup-mini__card--dark"></div>
                           <div class="mockup-mini__card mockup-mini__card--dark"></div>
                         </div>
                       </div>
                     </div>
-                    <span class="mockup-card__label">Тёмный технологичный</span>
+                    <span class="mockup-card__label">Dark Premium</span>
                   </label>
 
+                  <!-- Option 3: Креативный Авангард -->
                   <label class="mockup-card">
-                    <input type="radio" name="mockup" value="Яркий и современный">
-                    <div class="mockup-card__preview" id="mockup3">
+                    <input type="radio" name="vibe" value="Креативный Авангард">
+                    <div class="mockup-card__preview">
                       <div class="mockup-mini mockup-mini--colorful">
                         <div class="mockup-mini__header mockup-mini__header--gradient">
-                          <div class="mockup-mini__logo"></div>
-                          <div class="mockup-mini__nav"><span></span><span></span><span></span></div>
+                          <div class="mockup-mini__logo" style="background:#fff"></div>
                         </div>
                         <div class="mockup-mini__hero mockup-mini__hero--split">
-                          <div class="mockup-mini__hero-img mockup-mini__hero-img--round"></div>
+                          <div class="mockup-mini__hero-img"
+                            style="background:linear-gradient(45deg, #ff6b6b, #feca57); border-radius: 8px;"></div>
                           <div class="mockup-mini__hero-text">
-                            <div class="mockup-mini__line mockup-mini__line--lg mockup-mini__line--colored"></div>
-                            <div class="mockup-mini__line mockup-mini__line--sm"></div>
+                            <div class="mockup-mini__line mockup-mini__line--xl mockup-mini__line--colored"></div>
+                            <div class="mockup-mini__line mockup-mini__line--md"></div>
                             <div class="mockup-mini__btn mockup-mini__btn--rounded"></div>
                           </div>
                         </div>
-                        <div class="mockup-mini__grid mockup-mini__grid--3">
+                        <div class="mockup-mini__grid">
                           <div class="mockup-mini__card mockup-mini__card--round"></div>
                           <div class="mockup-mini__card mockup-mini__card--round"></div>
                           <div class="mockup-mini__card mockup-mini__card--round"></div>
                         </div>
                       </div>
                     </div>
-                    <span class="mockup-card__label">Яркий и современный</span>
+                    <span class="mockup-card__label">Креативный Авангард</span>
                   </label>
                 </div>
-              </div>
-
-              <div class="form-group form-group--full">
-                <label>Есть ли готовые фотографии товаров, инфографика, описания, тексты? <span
-                    class="required">*</span></label>
-                <div class="radio-group">
-                  <label class="radio-label">
-                    <input type="radio" name="hasContent" value="Да" required>
-                    <span class="radiomark"></span>
-                    Да
-                  </label>
-                  <label class="radio-label">
-                    <input type="radio" name="hasContent" value="Нет">
-                    <span class="radiomark"></span>
-                    Нет
-                  </label>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="contentOther">Другое</label>
-                <input type="text" id="contentOther" name="contentOther" placeholder="Комментарий по контенту">
               </div>
             </div>
           </div>
 
-          <!-- STEP 5: Logistics -->
-          <div class="brief__step" data-step="5">
-            <h3 class="brief__step-title">Оплата и доставка</h3>
+          <!-- STEP 2: Hero Wow-Effect -->
+          <div class="brief__step" data-step="2">
+            <h3 class="brief__step-title">Wow-эффект на Главной</h3>
+            <p style="margin-bottom: 24px; opacity: 0.8;">Как будем встречать ваших покупателей на первом экране?</p>
             <div class="brief__fields">
               <div class="form-group form-group--full">
-                <label for="paymentMethods">Какие способы оплаты планируются? <span class="required">*</span></label>
-                <textarea id="paymentMethods" name="paymentMethods" rows="2"
-                  placeholder="Наличные, картой при получении, онлайн-оплата — ЮKassa, Сбербанк и др."
-                  required></textarea>
-              </div>
-              <div class="form-group form-group--full">
-                <label for="deliveryMethods">Какие способы доставки планируются? <span class="required">*</span></label>
-                <textarea id="deliveryMethods" name="deliveryMethods" rows="2"
-                  placeholder="Самовывоз, курьер, СДЭК, Почта России и др." required></textarea>
-              </div>
-              <div class="form-group form-group--full">
-                <label>Планируете ли использовать промокоды, скидки, акции? <span class="required">*</span></label>
-                <div class="radio-group">
-                  <label class="radio-label">
-                    <input type="radio" name="promos" value="Да" required>
-                    <span class="radiomark"></span>
-                    Да
+                <div class="mockup-selector">
+                  <!-- Option 1: Интерактивная 3D-модель (WebGL) -->
+                  <label class="mockup-card">
+                    <input type="radio" name="heroEffect" value="Интерактивная 3D-модель (WebGL)" required>
+                    <div class="mockup-card__preview"
+                      style="display:flex; align-items:center; justify-content:center; flex-direction:column; background:var(--bg-secondary)">
+                      <div
+                        style="width: 60px; height: 60px; border: 2px dashed var(--color-primary); border-radius: 12px; display:flex; align-items:center; justify-content:center; animation: spin 4s linear infinite; margin-bottom: 10px;">
+                        🧊</div>
+                      <div class="mockup-mini__line mockup-mini__line--md"
+                        style="background:var(--color-primary); opacity: 0.5;"></div>
+                    </div>
+                    <span class="mockup-card__label">Интерактивное 3D</span>
                   </label>
-                  <label class="radio-label">
-                    <input type="radio" name="promos" value="Нет">
-                    <span class="radiomark"></span>
-                    Нет
+
+                  <!-- Option 2: Иммерсивный Скролл -->
+                  <label class="mockup-card">
+                    <input type="radio" name="heroEffect" value="Иммерсивный Скролл (Storytelling)">
+                    <div class="mockup-card__preview"
+                      style="display:flex; align-items:center; justify-content:center; flex-direction:column; background:var(--bg-secondary); position: relative; overflow: hidden;">
+                      <div
+                        style="width: 40px; height: 40px; border-radius: 50%; background:var(--color-primary); position: absolute; top: -10px; opacity: 0.2; animation: float 3s ease-in-out infinite;">
+                      </div>
+                      <div
+                        style="width: 60px; height: 50px; border-radius: 8px; background:linear-gradient(180deg, transparent, var(--color-primary-light)); border: 1px solid var(--border-color); display:flex; align-items:flex-end; padding: 5px;">
+                        <div class="mockup-mini__line mockup-mini__line--sm"
+                          style="background:var(--color-primary); opacity: 0.8;"></div>
+                      </div>
+                    </div>
+                    <span class="mockup-card__label">Иммерсивный Скролл</span>
+                  </label>
+
+                  <!-- Option 3: Магия Частиц -->
+                  <label class="mockup-card">
+                    <input type="radio" name="heroEffect" value="Магия частиц (Particles)">
+                    <div class="mockup-card__preview"
+                      style="display:flex; align-items:center; justify-content:center; flex-direction:column; background:var(--bg-secondary); position: relative;">
+                      <div
+                        style="font-size: 2rem; position: absolute; top: 10px; left: 10px; animation: pulse 2s infinite;">
+                        ✨</div>
+                      <div
+                        style="font-size: 1rem; position: absolute; bottom: 20px; right: 20px; animation: pulse 2s infinite 1s;">
+                        ✨</div>
+                      <div
+                        style="font-size: 1.5rem; position: absolute; top: 30px; right: 30px; animation: pulse 2s infinite 0.5s;">
+                        ✨</div>
+                      <div class="mockup-mini__line mockup-mini__line--lg"
+                        style="background:var(--color-primary); opacity: 0.5;"></div>
+                    </div>
+                    <span class="mockup-card__label">Магия Частиц</span>
                   </label>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <!-- STEP 3: Product Card -->
+          <div class="brief__step" data-step="3">
+            <h3 class="brief__step-title">Подача Товара (Карточка)</h3>
+            <p style="margin-bottom: 24px; opacity: 0.8;">Как клиент будет изучать товар внутри каталога?</p>
+            <div class="brief__fields">
+              <div class="form-group form-group--full">
+                <div class="mockup-selector">
+                  <!-- Option 1: 3D-Обзор 360° -->
+                  <label class="mockup-card">
+                    <input type="radio" name="productEffect" value="3D-Обзор 360°" required>
+                    <div class="mockup-card__preview"
+                      style="display:flex; align-items:center; justify-content:center; background:var(--bg-secondary)">
+                      <div style="text-align:center; position:relative;">
+                        <span style="font-size: 2.5rem; display:block; animation: spin 8s linear infinite;">📦</span>
+                        <div
+                          style="width: 40px; height: 10px; border: 2px solid var(--color-primary); border-top: none; border-radius: 0 0 20px 20px; margin: 0 auto; opacity: 0.5;">
+                        </div>
+                      </div>
+                    </div>
+                    <span class="mockup-card__label">3D-Обзор 360°</span>
+                  </label>
+
+                  <!-- Option 2: Видео-витрина -->
+                  <label class="mockup-card">
+                    <input type="radio" name="productEffect" value="Видео-витрина">
+                    <div class="mockup-card__preview"
+                      style="display:flex; align-items:center; justify-content:center; background:var(--bg-secondary)">
+                      <div
+                        style="width: 80%; height: 70%; background: #000; border-radius: 8px; position:relative; overflow: hidden; display:flex; align-items:center; justify-content:center;">
+                        <div
+                          style="position:absolute; inset:0; background: linear-gradient(45deg, #ff005533, #0055ff33); animation: gradientShift 3s infinite;">
+                        </div>
+                        <div
+                          style="width: 0; height: 0; border-top: 10px solid transparent; border-bottom: 10px solid transparent; border-left: 15px solid #fff; z-index:1;">
+                        </div>
+                      </div>
+                    </div>
+                    <span class="mockup-card__label">Видео-витрина</span>
+                  </label>
+
+                  <!-- Option 3: Классика Premium -->
+                  <label class="mockup-card">
+                    <input type="radio" name="productEffect" value="Классика Premium">
+                    <div class="mockup-card__preview"
+                      style="display:flex; flex-direction:column; gap: 8px; align-items:center; justify-content:flex-start; padding-top: 15px; background:var(--bg-secondary); overflow: hidden;">
+                      <div
+                        style="width: 80%; height: 60px; background: var(--color-primary-light); border-radius: 8px; transform: translateY(0); box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                      </div>
+                      <div
+                        style="width: 80%; height: 60px; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; opacity: 0.7;">
+                      </div>
+                    </div>
+                    <span class="mockup-card__label">Классика Premium</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 4: Scale -->
+          <div class="brief__step" data-step="4">
+            <h3 class="brief__step-title">Масштаб (Ассортимент)</h3>
+            <p style="margin-bottom: 24px; opacity: 0.8;">Сколько у вас уникальных товаров? (Это влияет на архитектуру)
+            </p>
+            <div class="brief__fields">
+              <div class="form-group form-group--full">
+                <div class="radio-cards">
+                  <label class="radio-card">
+                    <input type="radio" name="scale" value="Эксклюзив (До 50 товаров)" required>
+                    <div class="radio-card__content" style="padding: 30px 20px;">
+                      <div class="radio-card__icon" style="font-size: 3rem; margin-bottom: 15px;">💎</div>
+                      <strong style="font-size: 1.2rem;">Эксклюзив</strong>
+                      <p style="margin-top: 10px;">До 50 отборных товаров. Фокус на подачу каждого продукта.</p>
+                    </div>
+                  </label>
+                  <label class="radio-card">
+                    <input type="radio" name="scale" value="Бутик (50-1000 товаров)">
+                    <div class="radio-card__content" style="padding: 30px 20px;">
+                      <div class="radio-card__icon" style="font-size: 3rem; margin-bottom: 15px;">🏬</div>
+                      <strong style="font-size: 1.2rem;">Бутик</strong>
+                      <p style="margin-top: 10px;">От 50 до 1000 товаров. Золотая середина с мощным поиском.</p>
+                    </div>
+                  </label>
+                  <label class="radio-card">
+                    <input type="radio" name="scale" value="Гипермаркет (Более 1000)">
+                    <div class="radio-card__content" style="padding: 30px 20px;">
+                      <div class="radio-card__icon" style="font-size: 3rem; margin-bottom: 15px;">🏭</div>
+                      <strong style="font-size: 1.2rem;">Гипермаркет</strong>
+                      <p style="margin-top: 10px;">Тысячи товаров. Сложные фильтры, серверная пагинация, Elastic Search.
+                      </p>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 5: Logistics CDEK -->
+          <div class="brief__step" data-step="5">
+            <h3 class="brief__step-title">Магия Логистики (СДЭК)</h3>
+            <p style="margin-bottom: 24px; opacity: 0.8;">Мы берем рутину на себя. Ваша магия автоматизации:</p>
+            <div class="brief__fields">
+              <div class="form-group form-group--full">
+                <div class="cdek-features" style="display: grid; gap: 1rem;">
+                  <label class="checkbox-label"
+                    style="align-items: center; background: rgba(var(--accent-color-rgb), 0.05); border: 1px solid rgba(var(--accent-color-rgb), 0.2); padding: 20px; border-radius: 12px; font-size: 1.1rem; cursor: pointer;">
+                    <input type="checkbox" name="cdek_features" value="Интерактивный Калькулятор в корзине" checked>
+                    <span class="checkmark" style="margin-top: 0; margin-right: 15px;"></span>
+                    <strong>💳 Авто-Калькулятор:</strong> Цена доставки считается прямо в корзине (СДЭК API).
+                  </label>
+                  <label class="checkbox-label"
+                    style="align-items: center; background: rgba(var(--accent-color-rgb), 0.05); border: 1px solid rgba(var(--accent-color-rgb), 0.2); padding: 20px; border-radius: 12px; font-size: 1.1rem; cursor: pointer;">
+                    <input type="checkbox" name="cdek_features" value="Выбор на Интерактивной Карте" checked>
+                    <span class="checkmark" style="margin-top: 0; margin-right: 15px;"></span>
+                    <strong>🗺 Карта ПВЗ:</strong> Покупатель выбирает удобный пункт выдачи на красивой карте.
+                  </label>
+                  <label class="checkbox-label"
+                    style="align-items: center; background: rgba(var(--accent-color-rgb), 0.05); border: 1px solid rgba(var(--accent-color-rgb), 0.2); padding: 20px; border-radius: 12px; font-size: 1.1rem; cursor: pointer;">
+                    <input type="checkbox" name="cdek_features" value="Автосоздание Накладных (ТТН)" checked>
+                    <span class="checkmark" style="margin-top: 0; margin-right: 15px;"></span>
+                    <strong>🚀 Магия авто-отправки:</strong> Сразу после оплаты система сама создаст накладную СДЭК для
+                    вас.
+                  </label>
+                </div>
+                <p style="margin-top: 15px; font-size: 0.9rem; color: var(--accent-color);"> ✓ Все опции включены. Мы
+                  создаем полноценную интеграцию, вы можете ни о чём не беспокоиться.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 6: Contacts -->
+          <div class="brief__step" data-step="6">
+            <h3 class="brief__step-title">Кому отправить проектную оценку?</h3>
+            <p style="margin-bottom: 24px; opacity: 0.8;">Последний шаг к вашему идеальному магазину.</p>
+            <div class="brief__fields">
+              <div class="form-group form-group--full">
+                <label for="fio">Как к вам обращаться? (Имя) <span class="required">*</span></label>
+                <input type="text" id="fio" name="fio" placeholder="Например, Александр" required>
+              </div>
               <div class="form-group">
-                <label for="promosOther">Другое</label>
-                <input type="text" id="promosOther" name="promosOther" placeholder="Дополнительная информация">
+                <label for="phone">Телефон (WhatsApp/Telegram) <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="+7 (999) 000-00-00" required>
+              </div>
+              <div class="form-group">
+                <label for="industry">Текущая ниша <span class="required">*</span></label>
+                <input type="text" id="industry" name="industry" placeholder="Одежда, Электроника, Авторская мебель..."
+                  required>
+              </div>
+              <div class="form-group">
+                <label for="socials">Ваши ссылки (Telegram / Avito / Ссылки на магазин)</label>
+                <input type="text" id="socials" name="socials" placeholder="Откуда переводите аудиторию?">
+              </div>
+              <div class="form-group form-group--full">
+                <label for="cdek">Номер договора СДЭК (ИНН)</label>
+                <input type="text" id="cdek_id" name="cdek_id"
+                  placeholder="Можно добавить позже, если сейчас не под рукой">
               </div>
               <div class="form-group form-group--full">
                 <label class="checkbox-label" style="align-items: flex-start;">
@@ -717,7 +720,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
                 <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
               </svg>
-              Отправить бриф
+              Запустить генерацию проекта
             </button>
           </div>
         </form>
@@ -737,13 +740,13 @@
     <div class="container">
       <div class="section__header animate-on-scroll">
         <span class="section__tag">05 — Команда</span>
-        <h2 class="section__title">Люди за <span class="text-accent">ГринБокс</span></h2>
+        <h2 class="section__title">Люди за <span class="text-accent">ЗелёнойКоробкой</span></h2>
         <p class="section__subtitle">Профессионалы, которые создают ваши проекты</p>
       </div>
       <div class="team__grid">
         <div class="team-card animate-on-scroll">
           <div class="team-card__photo">
-            <img src="/wld.jpg" alt="Дробышев И.С. — Основатель GreenBox" loading="lazy" />
+            <img src="/wld.jpg" alt="Дробышев И.С. — Основатель ЗелёнаяКоробка" loading="lazy" />
             <div class="team-card__glow"></div>
           </div>
           <div class="team-card__info">
@@ -755,7 +758,7 @@
 
         <div class="team-card animate-on-scroll">
           <div class="team-card__photo">
-            <img src="/fomin.png" alt="Фомин Е.В. — Член команды ГринБокс" loading="lazy" />
+            <img src="/fomin.png" alt="Фомин Е.В. — Член команды ЗелёнаяКоробка" loading="lazy" />
             <div class="team-card__glow"></div>
           </div>
           <div class="team-card__info">
@@ -767,7 +770,7 @@
 
         <div class="team-card animate-on-scroll">
           <div class="team-card__photo">
-            <img src="/web.jpg" alt="Нестеров А.С. — Старший веб-разработчик GreenBox" loading="lazy" />
+            <img src="/web.jpg" alt="Нестеров А.С. — Старший веб-разработчик ЗелёнаяКоробка" loading="lazy" />
             <div class="team-card__glow"></div>
           </div>
           <div class="team-card__info">
@@ -792,7 +795,8 @@
         <div class="reviews__track" id="reviewsTrack">
           <div class="review-card">
             <div class="review-card__stars">★★★★★</div>
-            <p class="review-card__text">«ГринБокс создали для нас потрясающий интернет-магазин. Продажи выросли на 150%
+            <p class="review-card__text">«ЗелёнаяКоробка создали для нас потрясающий интернет-магазин. Продажи выросли
+              на 150%
               после запуска. Рекомендую!»</p>
             <div class="review-card__author">
               <div class="review-card__avatar">АК</div>
@@ -810,7 +814,7 @@
               <div class="review-card__avatar">МС</div>
               <div>
                 <strong>Мария Смирнова</strong>
-                <span>FashionHub, Основатель</span>
+                <span>Модный Стиль, Основатель</span>
               </div>
             </div>
           </div>
@@ -822,7 +826,7 @@
               <div class="review-card__avatar">ДВ</div>
               <div>
                 <strong>Дмитрий Волков</strong>
-                <span>GreenMarket, CTO</span>
+                <span>ЭкоЛавка, Технический директор</span>
               </div>
             </div>
           </div>
@@ -834,7 +838,7 @@
               <div class="review-card__avatar">ИП</div>
               <div>
                 <strong>Ирина Петрова</strong>
-                <span>AutoParts Pro, Директор</span>
+                <span>АвтоДетали, Директор</span>
               </div>
             </div>
           </div>
@@ -962,7 +966,7 @@
                 d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
           </div>
-          <h4>Email</h4>
+          <h4>Почта</h4>
           <a href="mailto:info.greenboxweb@gmail.com">info.greenboxweb@gmail.com</a>
         </div>
         <div class="contact-card animate-on-scroll">
@@ -984,7 +988,7 @@
     <div class="container footer__inner">
       <div class="footer__brand">
         <a href="#" class="logo">
-          <span class="logo__green">Green</span><span class="logo__box">Box</span>
+          <span class="logo__green">Зелёная</span><span class="logo__box">Коробка</span>
         </a>
         <p>Создаём интернет-магазины, которые продают</p>
         <div class="footer__legal" style="margin-top: 1rem; font-size: 0.8rem; opacity: 0.7; line-height: 1.6;">
@@ -1001,7 +1005,7 @@
         <a href="/legal.html">Реквизиты и контакты</a>
       </div>
       <div class="footer__bottom">
-        <p>Россия &copy; 2026 ГринБокс. Все права защищены.</p>
+        <p>Россия &copy; 2026 ЗелёнаяКоробка. Все права защищены.</p>
         <p style="margin-top: 5px;"><a href="/legal.html"
             style="color: var(--text-tertiary); text-decoration: underline; font-size: 0.8rem;">Политика
             конфиденциальности и обработки персональных данных</a></p>
