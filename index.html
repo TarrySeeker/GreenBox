@@ -625,10 +625,50 @@
               <div class="form-group form-group--full" style="margin-top: 24px;">
                 <label>В какой стилистике мы упакуем ваш бренд? <span class="required">*</span></label>
                 <div class="radio-cards" style="grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));">
-                  <label class="radio-card"><input type="radio" name="vibe" value="Строгий минимализм" required><div class="radio-card__content"><strong>Строгий минимализм</strong></div></label>
-                  <label class="radio-card"><input type="radio" name="vibe" value="Тёмный премиум"><div class="radio-card__content"><strong>Тёмный премиум</strong></div></label>
-                  <label class="radio-card"><input type="radio" name="vibe" value="Яркие краски"><div class="radio-card__content"><strong>Яркие краски</strong></div></label>
-                  <label class="radio-card"><input type="radio" name="vibe" value="Свой стиль"><div class="radio-card__content"><strong>Свой стиль</strong></div></label>
+                  <div class="mockup-selector">
+                    <label class="mockup-card">
+                      <input type="radio" name="vibe" value="Строгий минимализм" required>
+                      <div class="mockup-card__preview">
+                        <div class="mockup-mini mockup-mini--light">
+                          <div class="mockup-mini__header"><div class="mockup-mini__logo" style="background:var(--text-primary)"></div><div class="mockup-mini__nav"><span></span><span></span><span></span></div></div>
+                          <div class="mockup-mini__hero"><div class="mockup-mini__hero-text"><div class="mockup-mini__line mockup-mini__line--lg"></div><div class="mockup-mini__line mockup-mini__line--sm"></div><div class="mockup-mini__btn" style="background:var(--text-primary)"></div></div><div class="mockup-mini__hero-img" style="background:#e0e0e0"></div></div>
+                          <div class="mockup-mini__grid mockup-mini__grid--2"><div class="mockup-mini__card" style="background:#f0f0f0"></div><div class="mockup-mini__card" style="background:#f0f0f0"></div></div>
+                        </div>
+                      </div>
+                      <span class="mockup-card__label">Строгий минимализм</span>
+                    </label>
+                    <label class="mockup-card">
+                      <input type="radio" name="vibe" value="Тёмный премиум">
+                      <div class="mockup-card__preview">
+                        <div class="mockup-mini mockup-mini--dark">
+                          <div class="mockup-mini__header"><div class="mockup-mini__logo" style="background:#fff"></div><div class="mockup-mini__nav"><span></span><span></span><span></span></div></div>
+                          <div class="mockup-mini__hero mockup-mini__hero--centered"><div class="mockup-mini__hero-img mockup-mini__hero-img--round" style="background:linear-gradient(135deg,#333,#1a1a2e)"></div><div class="mockup-mini__line mockup-mini__line--md"></div><div class="mockup-mini__btn mockup-mini__btn--glow"></div></div>
+                          <div class="mockup-mini__grid"><div class="mockup-mini__card mockup-mini__card--dark"></div><div class="mockup-mini__card mockup-mini__card--dark"></div><div class="mockup-mini__card mockup-mini__card--dark"></div></div>
+                        </div>
+                      </div>
+                      <span class="mockup-card__label">Тёмный премиум</span>
+                    </label>
+                    <label class="mockup-card">
+                      <input type="radio" name="vibe" value="Яркие краски">
+                      <div class="mockup-card__preview">
+                        <div class="mockup-mini mockup-mini--colorful">
+                          <div class="mockup-mini__header mockup-mini__header--gradient"><div class="mockup-mini__logo" style="background:#fff"></div></div>
+                          <div class="mockup-mini__hero mockup-mini__hero--split"><div class="mockup-mini__hero-img" style="background:linear-gradient(45deg,#ff6b6b,#feca57);border-radius:8px"></div><div class="mockup-mini__hero-text"><div class="mockup-mini__line mockup-mini__line--xl mockup-mini__line--colored"></div><div class="mockup-mini__line mockup-mini__line--md"></div><div class="mockup-mini__btn mockup-mini__btn--rounded"></div></div></div>
+                          <div class="mockup-mini__grid"><div class="mockup-mini__card mockup-mini__card--round"></div><div class="mockup-mini__card mockup-mini__card--round"></div><div class="mockup-mini__card mockup-mini__card--round"></div></div>
+                        </div>
+                      </div>
+                      <span class="mockup-card__label">Яркие краски</span>
+                    </label>
+                    <label class="mockup-card">
+                      <input type="radio" name="vibe" value="Свой стиль">
+                      <div class="mockup-card__preview" style="display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;background:var(--bg-secondary)">
+                        <div style="font-size:2rem">✏️</div>
+                        <div class="mockup-mini__line mockup-mini__line--md" style="background:var(--color-primary);opacity:0.5"></div>
+                        <div class="mockup-mini__line mockup-mini__line--sm" style="opacity:0.3"></div>
+                      </div>
+                      <span class="mockup-card__label">Свой стиль</span>
+                    </label>
+                  </div>
                 </div>
               </div>
               <div class="form-group form-group--full">
