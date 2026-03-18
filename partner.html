@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Стать партнёром — ЗелёнаяКоробка</title>
+  <meta name="description" content="Станьте партнёром веб-студии ЗелёнаяКоробка. Франчайзи СДЭК и самостоятельные отделы продаж. Оставьте заявку — свяжемся в течение суток." />
+  <link rel="canonical" href="https://greenboxweb.ru/partner.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://greenboxweb.ru/partner.html" />
+  <meta property="og:title" content="Стать партнёром — ЗелёнаяКоробка" />
+  <meta property="og:description" content="Франчайзи СДЭК и самостоятельные отделы продаж. Оставьте заявку." />
+  <meta property="og:image" content="https://greenboxweb.ru/og-greenbox.jpg" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:site_name" content="ЗелёнаяКоробка" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Base styles from GreenBox -->
+  <link rel="stylesheet" href="./assets/main-CZB6LTBa.css">
+
+  <style>
+    /* ===== PARTNER PAGE EXTRA STYLES ===== */
+    .partner-hero {
+      padding: calc(var(--header-height) + 3rem) 0 3rem;
+      background: var(--hero-bg);
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    .partner-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 50% at 50% 0%, var(--color-primary-glow), transparent);
+      pointer-events: none;
+    }
+    .partner-hero__tag {
+      display: inline-block;
+      background: var(--color-primary-light);
+      color: var(--color-primary);
+      border: 1px solid var(--color-primary);
+      border-radius: var(--radius-full);
+      font-size: .8rem;
+      font-weight: 600;
+      letter-spacing: .05em;
+      padding: .35rem 1rem;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+    .partner-hero__title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 800;
+      line-height: 1.15;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+    }
+    .partner-hero__title .accent { color: var(--color-primary); }
+    .partner-hero__sub {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      max-width: 560px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* ===== NOTICE BANNER ===== */
+    .partner-notice {
+      background: var(--bg-card);
+      border: 1px solid var(--color-primary);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem 1.75rem;
+      margin-bottom: 2.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      box-shadow: var(--shadow-glow);
+    }
+    .partner-notice__icon {
+      font-size: 1.8rem;
+      flex-shrink: 0;
+    }
+    .partner-notice__text {
+      font-size: .95rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    .partner-notice__text strong {
+      color: var(--text-primary);
+    }
+    .partner-notice__text a {
+      color: var(--color-primary);
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid var(--color-primary);
+      transition: opacity var(--transition-fast);
+    }
+    .partner-notice__text a:hover { opacity: .75; }
+
+    /* ===== PARTNER FORM ===== */
+    .partner-section {
+      padding: 3rem 0 5rem;
+    }
+    .partner-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-xl);
+      padding: 2.5rem;
+      box-shadow: var(--shadow-lg);
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .partner-card__header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .partner-card__header h2 {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: .5rem;
+    }
+    .partner-card__header p {
+      color: var(--text-secondary);
+      font-size: .95rem;
+    }
+    .partner-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+    .partner-form .form-group label {
+      display: block;
+      margin-bottom: .4rem;
+      font-size: .9rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+    }
+    .partner-form .required { color: var(--color-primary); }
+    .partner-form .form-hint {
+      font-size: .8rem;
+      color: var(--text-tertiary);
+      margin-top: .3rem;
+    }
+    .partner-submit {
+      margin-top: .5rem;
+    }
+    .partner-submit .btn {
+      width: 100%;
+      justify-content: center;
+      font-size: 1rem;
+      padding: .9rem 1.5rem;
+    }
+    .partner-notice-bottom {
+      text-align: center;
+      margin-top: 1.25rem;
+      font-size: .88rem;
+      color: var(--text-tertiary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .4rem;
+    }
+    .partner-success {
+      display: none;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    .partner-success__icon {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+    .partner-success__title {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: .75rem;
+    }
+    .partner-success__text {
+      color: var(--text-secondary);
+      font-size: .95rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ===== BENEFITS ===== */
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin: 2.5rem 0;
+    }
+    .benefit-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      transition: transform var(--transition-base), box-shadow var(--transition-base);
+    }
+    .benefit-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+    .benefit-card__icon {
+      font-size: 2rem;
+      margin-bottom: .75rem;
+    }
+    .benefit-card__title {
+      font-weight: 600;
+      margin-bottom: .4rem;
+      font-size: .95rem;
+    }
+    .benefit-card__text {
+      font-size: .85rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    /* nav__link--partner */
+    .nav__link--partner {
+      border: 1.5px solid var(--color-primary);
+      color: var(--color-primary) !important;
+      padding: .45rem 1.1rem;
+      border-radius: var(--radius-full);
+      font-weight: 600;
+      transition: background var(--transition-fast), color var(--transition-fast);
+    }
+    .nav__link--partner:after { display: none !important; }
+    .nav__link--partner:hover {
+      background: var(--color-primary);
+      color: var(--text-on-primary) !important;
+    }
+
+    /* spinner */
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .spinner { animation: spin 1s linear infinite; }
+
+    /* shake */
+    @keyframes shake {
+      0%,100% { transform: translateX(0); }
+      20%,60% { transform: translateX(-6px); }
+      40%,80% { transform: translateX(6px); }
+    }
+    .shake { animation: shake .4s ease; }
+
+    @media (max-width: 480px) {
+      .partner-card { padding: 1.5rem; }
+      .partner-hero { padding: calc(var(--header-height) + 2rem) 0 2rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="/" class="logo">
+        <span class="logo__green">Зелёная</span><span class="logo__box">Коробка</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="/#about" class="nav__link">О нас</a>
+        <a href="/#services" class="nav__link">Услуги</a>
+        <a href="/#portfolio" class="nav__link">Портфолио</a>
+        <a href="/#team" class="nav__link">Команда</a>
+        <a href="/#reviews" class="nav__link">Отзывы</a>
+        <a href="/#faq" class="nav__link">Вопросы</a>
+        <a href="/partner.html" class="nav__link nav__link--partner" style="background:var(--color-primary);color:var(--text-on-primary) !important;">🤝 Стать партнёром</a>
+        <a href="/#brief" class="nav__link nav__link--cta">Оставить заявку</a>
+      </nav>
+      <div class="header__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+          <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5" />
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+          </svg>
+          <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+        <button class="burger" id="burger" aria-label="Открыть меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="partner-hero">
+    <div class="container">
+      <div class="partner-hero__tag">Партнёрство</div>
+      <h1 class="partner-hero__title">Стать партнёром<br><span class="accent">ЗелёнойКоробки</span></h1>
+      <p class="partner-hero__sub">
+        Присоединяйтесь к нашей команде: франчайзи СДЭК и самостоятельные отделы продаж.
+        Продавайте сайты — мы сделаем всё остальное.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== BENEFITS ===== -->
+  <section class="section" style="padding-top: 3rem; padding-bottom: 1.5rem;">
+    <div class="container">
+      <div class="benefits-grid">
+        <div class="benefit-card animate-on-scroll">
+          <div class="benefit-card__icon">💰</div>
+          <div class="benefit-card__title">Комиссия с каждого заказа</div>
+          <div class="benefit-card__text">Вы приводите клиентов — мы разрабатываем. Фиксированный процент от каждой сделки.</div>
+        </div>
+        <div class="benefit-card animate-on-scroll">
+          <div class="benefit-card__icon">📦</div>
+          <div class="benefit-card__title">Франчайзи СДЭК</div>
+          <div class="benefit-card__text">Специальные условия для партнёров СДЭК: интеграция, поддержка и готовые решения.</div>
+        </div>
+        <div class="benefit-card animate-on-scroll">
+          <div class="benefit-card__icon">🚀</div>
+          <div class="benefit-card__title">Готовая база клиентов</div>
+          <div class="benefit-card__text">Стройте свой отдел продаж с нашей технической базой и поддержкой команды студии.</div>
+        </div>
+        <div class="benefit-card animate-on-scroll">
+          <div class="benefit-card__icon">🛡️</div>
+          <div class="benefit-card__title">Поддержка 24/7</div>
+          <div class="benefit-card__text">Менеджер студии всегда на связи. Ответим на вопросы клиента за вас.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FORM SECTION ===== -->
+  <section class="partner-section">
+    <div class="container">
+
+      <!-- Notice: хочешь заказать магазин? -->
+      <div class="partner-notice animate-on-scroll" style="max-width: 640px; margin: 0 auto 2.5rem;">
+        <div class="partner-notice__icon">🛒</div>
+        <div class="partner-notice__text">
+          <strong>Хотите заказать интернет-магазин?</strong><br>
+          Это другая форма — <a href="/#brief">заполните бриф на главной странице</a>, и мы обсудим ваш проект.
+        </div>
+      </div>
+
+      <!-- Partner card -->
+      <div class="partner-card animate-on-scroll">
+
+        <div id="partnerFormWrap">
+          <div class="partner-card__header">
+            <h2>Стать партнёром студии 🤝</h2>
+            <p>Заполните форму — мы свяжемся с вами в течение суток после получения запроса.</p>
+          </div>
+
+          <form class="partner-form" id="partnerForm" novalidate>
+
+            <div class="form-group">
+              <label for="pFio">ФИО <span class="required">*</span></label>
+              <input type="text" id="pFio" name="pFio" placeholder="Иванов Иван Иванович" required>
+            </div>
+
+            <div class="form-group">
+              <label for="pPhone">Номер телефона <span class="required">*</span></label>
+              <input type="tel" id="pPhone" name="pPhone" placeholder="+7 (999) 123-45-67" required>
+            </div>
+
+            <div class="form-group">
+              <label for="pEmail">Почта <span class="required">*</span></label>
+              <input type="email" id="pEmail" name="pEmail" placeholder="example@mail.ru" required>
+            </div>
+
+            <div class="form-group">
+              <label for="pRole">Должность <span class="required">*</span></label>
+              <input type="text" id="pRole" name="pRole" placeholder="Например: руководитель отдела продаж СДЭК" required>
+            </div>
+
+            <div class="form-group">
+              <label for="pMessage">Ваш запрос <span style="font-size:.8rem;color:var(--text-tertiary);">(необязательно)</span></label>
+              <textarea id="pMessage" name="pMessage" rows="4" placeholder="Расскажите подробнее о себе, вашем опыте или задайте вопрос..."></textarea>
+              <div class="form-hint">Поле необязательное — можно оставить пустым</div>
+            </div>
+
+            <div class="form-group">
+              <label class="checkbox-label" style="align-items: flex-start;">
+                <input type="checkbox" name="pConsent" required>
+                <span class="checkmark" style="margin-top: 3px;"></span>
+                <span style="font-size: 0.85rem; opacity: 0.8;">Я согласен на обработку персональных данных</span>
+              </label>
+            </div>
+
+            <div class="partner-submit">
+              <button type="submit" class="btn btn--primary" id="partnerSubmitBtn">
+                <span>Отправить заявку</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="partner-notice-bottom">
+              <span>🕐</span>
+              <span>Свяжемся с вами в течение суток после получения запроса</span>
+            </div>
+
+          </form>
+        </div>
+
+        <!-- Success state -->
+        <div class="partner-success" id="partnerSuccess">
+          <div class="partner-success__icon">✅</div>
+          <div class="partner-success__title">Заявка отправлена!</div>
+          <div class="partner-success__text">
+            Мы получили ваш запрос и свяжемся с вами в течение суток.<br>
+            Следите за телефоном и почтой.
+          </div>
+          <a href="/" class="btn btn--outline">← На главную</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="/" class="logo">
+          <span class="logo__green">Зелёная</span><span class="logo__box">Коробка</span>
+        </a>
+        <p>Создаём интернет-магазины, которые продают</p>
+        <div class="footer__legal" style="margin-top: 1rem; font-size: 0.8rem; opacity: 0.7; line-height: 1.6;">
+          ИП Дробышев И.С.<br>
+          ИНН 860238618587<br>
+          ОГРНИП 324237500356338
+        </div>
+      </div>
+      <div class="footer__links">
+        <a href="/#about">О нас</a>
+        <a href="/#services">Услуги</a>
+        <a href="/#portfolio">Портфолио</a>
+        <a href="/partner.html">Стать партнёром</a>
+        <a href="/#brief">Оставить заявку</a>
+        <a href="/legal.html">Реквизиты и контакты</a>
+      </div>
+      <div class="footer__bottom">
+        <p>Россия &copy; 2026 ЗелёнаяКоробка. Все права защищены.</p>
+        <p style="margin-top: 5px;"><a href="/legal.html" style="color: var(--text-tertiary); text-decoration: underline; font-size: 0.8rem;">Политика конфиденциальности и обработки персональных данных</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ===== THEME TOGGLE =====
+    (function() {
+      const toggle = document.getElementById('themeToggle');
+      const root = document.documentElement;
+      const saved = localStorage.getItem('greenbox-theme');
+      if (saved) {
+        root.setAttribute('data-theme', saved);
+      } else {
+        root.setAttribute('data-theme', window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      }
+      toggle && toggle.addEventListener('click', () => {
+        const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        localStorage.setItem('greenbox-theme', next);
+      });
+    })();
+
+    // ===== HEADER SCROLL =====
+    window.addEventListener('scroll', () => {
+      const h = document.getElementById('header');
+      if (h) h.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    // ===== BURGER =====
+    const burger = document.getElementById('burger');
+    const nav = document.getElementById('nav');
+    burger && burger.addEventListener('click', () => {
+      burger.classList.toggle('open');
+      nav.classList.toggle('open');
+    });
+    nav && nav.querySelectorAll('.nav__link').forEach(link => {
+      link.addEventListener('click', () => {
+        burger.classList.remove('open');
+        nav.classList.remove('open');
+      });
+    });
+
+    // ===== SCROLL ANIMATIONS =====
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: .1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.animate-on-scroll').forEach(el => obs.observe(el));
+
+    // ===== PHONE MASK =====
+    const phoneInput = document.getElementById('pPhone');
+    phoneInput && phoneInput.addEventListener('input', function(e) {
+      let v = this.value.replace(/\D/g, '');
+      if (v.startsWith('8')) v = '7' + v.slice(1);
+      if (v.startsWith('7')) {
+        let f = '+7';
+        if (v.length > 1) f += ' (' + v.slice(1, 4);
+        if (v.length >= 4) f += ') ' + v.slice(4, 7);
+        if (v.length >= 7) f += '-' + v.slice(7, 9);
+        if (v.length >= 9) f += '-' + v.slice(9, 11);
+        this.value = f;
+      } else {
+        this.value = v.length ? '+' + v : '';
+      }
+    });
+
+    // ===== TELEGRAM BOT =====
+    const BOT_TOKEN = '8366852045:AAE0q31afQdoZppGHR7q6hQkTRLLqCWDpz0';
+    const CHAT_ID = '-5011577832';
+
+    async function sendToTelegram(data) {
+      const lines = [
+        '🤝 <b>НОВАЯ ЗАЯВКА НА ПАРТНЁРСТВО — ЗелёнаяКоробка</b>',
+        '━━━━━━━━━━━━━━━━━━━',
+        `👤 ФИО: ${data.fio}`,
+        `📱 Телефон: ${data.phone}`,
+        `📧 Почта: ${data.email}`,
+        `💼 Должность: ${data.role}`,
+        `💬 Запрос: ${data.message || '—'}`,
+        '━━━━━━━━━━━━━━━━━━━',
+        `🕐 ${new Date().toLocaleString('ru-RU')}`,
+      ];
+      const text = lines.join('\n');
+      try {
+        const res = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ chat_id: CHAT_ID, text, parse_mode: 'HTML' }),
+        });
+        const json = await res.json();
+        return json.ok;
+      } catch(err) {
+        console.error('Telegram error:', err);
+        return false;
+      }
+    }
+
+    // ===== FORM SUBMISSION =====
+    const form = document.getElementById('partnerForm');
+    const submitBtn = document.getElementById('partnerSubmitBtn');
+    const formWrap = document.getElementById('partnerFormWrap');
+    const successBlock = document.getElementById('partnerSuccess');
+
+    function validateField(el) {
+      const v = el.value.trim();
+      if (el.type === 'email') {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+      }
+      if (el.type === 'tel') {
+        const digits = v.replace(/\D/g, '');
+        return digits.length >= 11;
+      }
+      if (el.type === 'checkbox') {
+        return el.checked;
+      }
+      return v.length > 0;
+    }
+
+    function markError(el) {
+      el.classList.add('error');
+      el.addEventListener('input', () => el.classList.remove('error'), { once: true });
+      el.addEventListener('change', () => el.classList.remove('error'), { once: true });
+    }
+
+    form && form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      const fio = document.getElementById('pFio');
+      const phone = document.getElementById('pPhone');
+      const email = document.getElementById('pEmail');
+      const role = document.getElementById('pRole');
+      const consent = form.querySelector('[name="pConsent"]');
+
+      let valid = true;
+      [fio, phone, email, role, consent].forEach(el => {
+        if (!validateField(el)) { markError(el); valid = false; }
+      });
+
+      if (!valid) {
+        const card = document.querySelector('.partner-card');
+        card && card.classList.add('shake');
+        setTimeout(() => card && card.classList.remove('shake'), 500);
+        return;
+      }
+
+      // Loading state
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = `
+        <svg class="spinner" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10" stroke-dasharray="60" stroke-dashoffset="20"/>
+        </svg>
+        <span>Отправка...</span>
+      `;
+
+      const ok = await sendToTelegram({
+        fio: fio.value.trim(),
+        phone: phone.value.trim(),
+        email: email.value.trim(),
+        role: role.value.trim(),
+        message: document.getElementById('pMessage').value.trim(),
+      });
+
+      if (ok) {
+        formWrap.style.display = 'none';
+        successBlock.style.display = 'block';
+      } else {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<span>Попробовать снова</span>';
+        alert('Ошибка отправки. Попробуйте чуть позже или напишите нам напрямую в Telegram: @infogreenbox');
+      }
+    });
+  </script>
+
+</body>
+</html>
