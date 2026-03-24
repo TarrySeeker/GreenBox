@@ -69,6 +69,31 @@
   </script>
   <script type="module" crossorigin src="./assets/main-CLWkkBV4.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/index-H46bGeT2.css">
+  <style>
+    /* ===== Кнопки шапки (десктоп / мобайл) ===== */
+    .header-desktop-ctas {
+      display: flex; align-items: center; gap: .6rem;
+    }
+    .nav__link--partner {
+      border: 1.5px solid var(--color-primary);
+      color: var(--color-primary) !important;
+      padding: .45rem 1.05rem;
+      border-radius: 9999px;
+      font-weight: 600; font-size: .85rem;
+      white-space: nowrap; text-decoration: none;
+      transition: background .15s ease, color .15s ease;
+    }
+    .nav__link--partner:hover {
+      background: var(--color-primary);
+      color: var(--text-on-primary) !important;
+    }
+    .nav__link--partner::after { display: none !important; }
+    .nav__link--mobile-only { display: none !important; }
+    @media (max-width: 1024px) {
+      .header-desktop-ctas { display: none; }
+      .nav__link--mobile-only { display: flex !important; }
+    }
+  </style>
 </head>
 
 <body>
@@ -86,10 +111,16 @@
         <a href="#team" class="nav__link">Команда</a>
         <a href="#reviews" class="nav__link">Отзывы</a>
         <a href="#faq" class="nav__link">Вопросы</a>
-        <a href="/partner.html" class="nav__link" style="border:1.5px solid var(--color-primary);color:var(--color-primary)!important;padding:.45rem 1.1rem;border-radius:9999px;font-weight:600;">🤝 Стать партнёром</a>
-        <a href="#" class="nav__link nav__link--cta" id="openRequestModalBtn">Оставить заявку</a>
+        <!-- Только мобайл (внутри бургер-меню) -->
+        <a href="/partner.html" class="nav__link nav__link--partner nav__link--mobile-only">🤝 Стать партнёром</a>
+        <a href="#" class="nav__link nav__link--cta nav__link--mobile-only" id="openRequestModalBtnMobile">Оставить заявку</a>
       </nav>
       <div class="header__actions">
+        <!-- Кнопки только на десктопе -->
+        <div class="header-desktop-ctas">
+          <a href="/partner.html" class="nav__link--partner">🤝 Стать партнёром</a>
+          <a href="#" class="nav__link nav__link--cta" id="openRequestModalBtn">Оставить заявку</a>
+        </div>
         <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
           <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor"
             stroke-width="2">
