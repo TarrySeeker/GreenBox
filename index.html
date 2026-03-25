@@ -93,6 +93,8 @@
     @media (max-width: 1024px) {
       .header-desktop-ctas { display: none; }
       .nav__link--mobile-only { display: flex !important; }
+      /* Поднимаем nav выше шапки, чтобы тапы не перехватывала шапка */
+      .nav { z-index: 1002 !important; }
     }
   </style>
 </head>
@@ -113,7 +115,7 @@
         <a href="#reviews" class="nav__link">Отзывы</a>
         <a href="#faq" class="nav__link">Вопросы</a>
         <!-- Только мобайл (внутри бургер-меню) -->
-        <a href="/partner.html" class="nav__link nav__link--partner nav__link--mobile-only">🤝 Стать партнёром</a>
+        <a href="/partner.html" class="nav__link nav__link--partner nav__link--mobile-only" onclick="document.getElementById('nav').classList.remove('active');document.getElementById('burger').classList.remove('active');document.body.style.overflow='';window.location.href='/partner.html';return false;">🤝 Стать партнёром</a>
         <a href="#" class="nav__link nav__link--cta nav__link--mobile-only" id="openRequestModalBtnMobile">Оставить заявку</a>
       </nav>
       <div class="header__actions">
